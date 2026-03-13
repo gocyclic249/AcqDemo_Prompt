@@ -77,7 +77,6 @@ organizational structure. Examples:
 - Number of personnel you supervise or lead
 - Geographic scope
 - Any duties outside your normal scope you performed
-- Items that cannot be listed on unclassified documents]
 
 # Simple List of What You Have Done
 [List your actions and accomplishments. The closer to the WRI format
@@ -87,12 +86,6 @@ the better the output will be. Include:
 - Any specific numbers, costs, or details you want included
 - Which objective each action falls under (if you know)
 
-Example:
-- Coordinated full ICS update at remote site, $5M project
-- Developed account management software saving $100K
-- Led risk assessments for 7 systems including life safety
-- Recovered mission-critical system in 1 hour after 7-hour outage
-- Wrote PWS for $10M contract at PL1 area]
 ```
 
 ### Step 3: Review the Output
