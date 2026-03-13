@@ -1,6 +1,8 @@
-# AcqDemo WRI / CRI Statement Generator
+# AcqDemo Performance Management Tool Suite
 
-An LLM-assisted tool for generating AcqDemo performance management statements using the WRI (What-Result-Impact) and CRI (Contribution-Result-Impact) writing models.
+An LLM-assisted toolkit for AcqDemo performance management, including:
+- **Employee prompt** (`prompt.txt`) — generates WRI and CRI statements from a simple list of accomplishments.
+- **Supervisor prompt** (`supervisor_prompt.txt`) — generates PAQL-aligned supervisor summaries from an employee's WRI/CRI statements.
 
 **Classification: UNCLASSIFIED** — This tool and its prompt are UNCLASSIFIED. Content becomes CUI when user-specific performance data is entered. Do not include classified information in any inputs.
 
@@ -13,11 +15,11 @@ An LLM-assisted tool for generating AcqDemo performance management statements us
 | Temperature | 0.7 |
 | Deep Agent | False |
 
-## Usage
+## Employee Statement Generator
 
-### Step 1: Copy the System Prompt
+### Step 1: Paste the Prompt as Your First Message
 
-Open `prompt.txt` and copy its entire contents. Paste it into the chat window on chat.genai.army.mil. This sets up the LLM with the rules and format for generating your statements.
+Open `prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field). This sets up the LLM with the rules and format for generating your statements.
 
 ### Step 2: Fill In the Template Below and Paste It Into the Same Chat Window
 
@@ -33,6 +35,12 @@ tie your Impact statements to higher-level organizational goals.]
 
 # NH Level
 [Your broadband level, e.g., NH-03, NH-04]
+
+# Statement Type
+[Annual / Midpoint]
+
+# Appraisal Period
+[e.g., Oct 2025 – Sep 2026, or Oct 2025 – Mar 2026 for midpoint]
 
 # Job Title
 [Your official job title]
@@ -100,3 +108,37 @@ Review all generated statements for accuracy and completeness before entering th
 - **Review and personalize** — always review the output for accuracy and completeness before submitting in CAS2Net. The LLM assists but does not replace your professional judgment.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
 - **For contribution planning** — change the Statement Type to CRI and list what you plan to do rather than what you have done.
+
+---
+
+## Supervisor Summary Generator
+
+### Step 1: Paste the Supervisor Prompt as Your First Message
+
+Open `supervisor_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field).
+
+### Step 2: Provide the Employee's Statements
+
+Paste the following into the same chat window:
+
+```
+# WRI Statements
+[Paste all of the employee's WRI statements from CAS2Net]
+
+# CRI Statements
+[Paste all of the employee's CRI statements from CAS2Net]
+
+# Rated Individual Level
+[e.g., NH Level III, NK Level II]
+```
+
+### Step 3: Review the Output
+
+The LLM will generate a supervisor summary organized by factor with PAQL score range recommendations. Review for accuracy against the employee's actual performance before finalizing in CAS2Net. The tool assists but does not replace supervisory judgment.
+
+### Tips for Supervisor Summaries
+
+- **Use the employee's finalized WRI/CRI statements** — the summary is only as strong as the input statements.
+- **Include the correct career path and level** — NK and NH have different descriptor tables and score ranges.
+- **Review discriminator alignment** — verify that the suggested discriminator mappings match your assessment of the employee's performance.
+- **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
