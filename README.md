@@ -4,6 +4,7 @@ An LLM-assisted toolkit for AcqDemo performance management, including:
 - **Self-Assessment Statement Generator** (`wri_prompt.txt`) — generates contribution statements from a simple list of accomplishments for annual and midpoint self-assessments.
 - **Contribution Plan Statement Generator** (`contribution_plan_prompt.txt`) — generates contribution plan statements from a list of planned contributions for the upcoming appraisal cycle.
 - **Supervisor Assessment Generator** (`supervisor_prompt.txt`) — generates PAQL-aligned supervisory appraisals from an employee's self-assessment contribution statements.
+- **Assessment Format Reviewer** (`assessment_review_prompt.txt`) — evaluates completed annual or midterm appraisal reports for correct formatting, structural completeness, and CCAS compliance. Supports multi-person PDFs.
 
 **Classification: UNCLASSIFIED** — This tool and its prompts are UNCLASSIFIED. Content becomes CUI when user-specific performance data is entered. Do not include classified information in any inputs.
 
@@ -206,4 +207,53 @@ The LLM will generate a supervisory assessment organized by factor, starting wit
 - **Be ready with your concurrence position** — for each factor, know whether you concur, partially concur, or do not concur with the employee's self-assessment and why.
 - **Note missing contributions** — if the employee left out important accomplishments, mention them so the LLM can include them.
 - **Review discriminator alignment** — verify that the suggested discriminator mappings match your assessment of the employee's performance.
+- **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
+
+---
+
+## Assessment Format Reviewer
+
+Use this prompt to **review completed annual or midterm appraisal reports** for formatting compliance before submission. It checks supervisor concurrence statements, W-R-I format, report structure, scoring validation, and more. Supports multi-person PDFs.
+
+### Step 1: Paste the Prompt as Your First Message
+
+Open `assessment_review_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field).
+
+### Step 2: Upload or Paste the Report
+
+Upload the PDF of the appraisal report (single or multi-person) or paste the report text into the chat window.
+
+### Step 3: Answer the Assessment Type Question
+
+The LLM will ask whether this is a **midterm** or **annual** assessment. This determines the minimum W-R-I statement requirement per factor:
+- **Midterm:** 1 W-R-I statement per factor minimum
+- **Annual:** 3 W-R-I statements per factor minimum
+
+### Step 4: Review the Findings
+
+The LLM will produce a structured findings report for each person in the PDF. The report includes:
+- **Overall Compliance** — PASS or NEEDS REVISION
+- **Bottom Line Up Front (BLUF)** — counts of CRITICAL, WARNING, and INFO findings with the top issues
+- **Section-by-Section Summary** — one-line status for each section of the report
+- **Detailed Findings** — CRITICAL issues (must fix before submission), WARNINGS (should address), and INFO items (optional improvements)
+
+The output uses no tables, so it can be downloaded as a .docx file without formatting issues.
+
+### What It Checks
+
+1. **Supervisor Concurrence Statements** (CRITICAL) — must use one of three exact approved phrasings
+2. **W-R-I Format Compliance** (CRITICAL) — no W-R-I = no pay raise/no award
+3. **Mandatory Supervisory Objective** (CRITICAL) — supervisors must state personnel counts in first WRI under Job Achievement
+4. **Report Structure Completeness** (CRITICAL/WARNING) — header fields, all three factors, scores present
+5. **Supervisor Assessment Content** (WARNING) — four required elements per CCAS guidance
+6. **Scoring Validation** (CRITICAL) — numeric scores within valid ranges for career path and level
+7. **Character Limit Awareness** (WARNING) — 4,000 characters per objective in CAS2Net
+8. **Writing Quality** (INFO) — active voice, formal style, descriptor language
+
+### Tips for Format Review
+
+- **Upload the full PDF** — the reviewer handles multi-person reports and evaluates each person independently.
+- **Know your assessment type** — midterm and annual have different W-R-I minimums.
+- **Focus on CRITICAL findings first** — these block pay raise/award eligibility and must be corrected before submission.
+- **Use the exact concurrence phrasing** — the three approved statements are listed in the findings when flagged.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
