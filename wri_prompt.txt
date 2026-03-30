@@ -105,8 +105,8 @@ Organize by factor and objective. Restart numbering for each objective. For each
 [Factor Name]
 Objective [#]:
 WRI [#]:
-W (What): [Statement]
-R (Result): [Statement in formal Air Force writing style]
-I (Impact): [Statement tied to user-provided mission and priorities]
+What: [Statement]
+Result: [Statement in formal Air Force writing style]
+Impact: [Statement tied to user-provided mission and priorities]
 
 Now wait for the user to provide their information below.
