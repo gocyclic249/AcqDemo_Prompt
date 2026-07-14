@@ -159,3 +159,97 @@ Supervisor Response: I agree/disagree with the employee's midpoint assessment. M
 Discussion date and method documented in CAS2Net:
 
 ---
+
+## Section 3: Annual Assessment
+
+> GUIDANCE: Complete this section by 30 September. Source: 2026 AcqDemo Program Guide, Section 7.5.
+
+### Employee Self-Assessment
+
+> GUIDANCE — Reminders:
+> - Employees must complete a self-assessment in the W-R-I format.
+> - Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
+> - Do not duplicate statements from year to year, and do not reuse the same statement across factors.
+
+[IF APPLICABLE — mandatory Supervisory Objective]: Before any W-R-I statement in Job Achievement and/or Innovation, state how many military members, civilian employees, and contractors you supervise or manage, for example "I supervise 0 military, 10 civilians, and manage 6 contractors." Then describe, in paragraph form and not W-R-I format, how you met the supervisory objective. This statement does not count toward the three required W-R-I statements for this factor.
+
+**Job Achievement and/or Innovation** (minimum 3 W-R-I)
+
+WRI 1
+(W):
+(R):
+(I):
+
+WRI 2
+(W):
+(R):
+(I):
+
+WRI 3
+(W):
+(R):
+(I):
+
+(Optional: additional WRI statements)
+
+**Communication and/or Teamwork** (minimum 3 W-R-I)
+
+WRI 1
+(W):
+(R):
+(I):
+
+WRI 2
+(W):
+(R):
+(I):
+
+WRI 3
+(W):
+(R):
+(I):
+
+(Optional: additional WRI statements)
+
+[IF APPLICABLE — Acquisition Coded Position Objective]: Before your W-R-I statements in Mission Support, include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format and does not count toward the three required W-R-I statements for this factor.
+
+**Mission Support** (minimum 3 W-R-I)
+
+WRI 1
+(W):
+(R):
+(I):
+
+WRI 2
+(W):
+(R):
+(I):
+
+WRI 3
+(W):
+(R):
+(I):
+
+(Optional: additional WRI statements)
+
+### Supervisor Response
+
+> GUIDANCE — Reminders:
+> - Supervisors do not need to write in W-R-I format, but each factor narrative must begin with the lead-in statement matching the recommended score.
+> - Meeting expected contributions: the employee is scoring at their Expected Overall Contribution Score (EOCS) for the factor. Explain why the factor is met with clear, precise specifics — not flowery language. Include contributions the employee did not report.
+> - Exceeding expected contributions: the employee is scoring above their EOCS for the factor. Explain why the factor exceeds with clear, precise specifics. Include significant contributions the employee did not report.
+> - Partially meeting expected contributions or Not meeting expected contributions: the employee is scoring below their EOCS for the factor. Clearly describe the inadequate contributions or unmet expectations, based on documented feedback sessions or other supporting evidence from throughout the cycle.
+> - Each factor narrative must also include one to two sentences explaining how the employee's contributions align with DAF guidance and support the recommended PAQL score.
+
+**Job Achievement and/or Innovation**
+Meeting/Exceeding/Partially meeting/Not meeting expected contributions.
+
+
+**Communication and/or Teamwork**
+Meeting/Exceeding/Partially meeting/Not meeting expected contributions.
+
+
+**Mission Support**
+Meeting/Exceeding/Partially meeting/Not meeting expected contributions.
+
+---
