@@ -30,3 +30,90 @@ Mission One Level Higher (usually Squadron):
 
 
 ---
+
+## Section 1: Contribution Plan
+
+> GUIDANCE: Complete this section at the start of a new appraisal cycle, a change in position, or a new appointment. Source: 2026 AcqDemo Program Guide, Attachment C.
+>
+> Attachment C instructions:
+> - Contribution plans should reflect only the expected level of contribution; leave exceedances to the midpoint and annual assessments.
+> - Write so that other readers, including Pay Pool members, understand what you are communicating.
+> - Use strong SMART objectives.
+> - Use AI tools, and ensure the plan meets the appropriate AcqDemo broadband level, for example NH-III or NH-IV.
+> - State the Value of Position at the beginning of the Brief Summary of Position.
+> - Each factor requires a minimum of three (3) labeled expected contributions, for example JA1, CT1, MS1. Align each entry with the appropriate AcqDemo factor descriptors, and write clear, meaningful, measurable expected results.
+
+VALUE OF POSITION:
+
+Brief Summary of Position: Current Value of Position is:
+> GUIDANCE: In 2–3 lines, describe your primary duties, mission result, and scope of responsibility. Example: "Current Value of Position is: 93. Provides engineering expertise to support planning, analysis, design, integration, and execution of technical solutions for assigned programs. Ensures technical rigor, compliance with standards, and alignment with mission objectives."
+
+
+
+### Job Achievement and/or Innovation (JA)
+
+> GUIDANCE: This factor covers what you accomplish. It reflects your technical expertise, quality of work, problem-solving, initiative, and innovation.
+>
+> Think about:
+> - Technical Excellence: How will you apply or grow your technical skills on a project?
+> - Quality: How will you ensure your work is accurate, thorough, and delivered on time?
+> - Problem-Solving: What complex challenges will you solve?
+> - Initiative and Innovation: How will you improve a process, develop a new tool, or suggest a creative solution?
+>
+> Example Contributions:
+> - JA1: (Contribution) Develop and implement an automated testing script for the ABC software module to (Result) reduce manual testing time by 20% and improve defect detection.
+> - JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
+> - JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
+
+[IF APPLICABLE — Supervisor]: State your supervised counts before JA1, for example "I supervise 0 military, 10 civilians, and manage 6 contractors."
+
+Employee Job Achievement and/or Innovation Contributions:
+- JA1:
+- JA2:
+- JA3:
+- (Optional: JA4, JA5, etc.)
+
+### Communication and/or Teamwork (CT)
+
+> GUIDANCE: This factor covers how you work with others. It reflects your clarity in communication, collaboration, responsiveness, and ability to foster positive team dynamics.
+>
+> Think about:
+> - Clear Communication: How will you keep teammates and stakeholders informed, for example through meetings, reports, or presentations?
+> - Collaboration: How will you actively work with others to achieve a shared goal?
+> - Mentorship and Team Building: How will you help or mentor others?
+> - Relationship Building: How will you build and maintain effective working relationships across teams or with external partners?
+>
+> Example Contributions:
+> - CT1: (Contribution) Facilitate weekly project sync meetings with the Integrated Project Team (IPT), ensuring clear communication of priorities and risks via meeting minutes with Contribution items.
+> - CT2: (Contribution) Mentor one junior engineer on the team by providing regular guidance, (Result) fostering their professional growth and technical skills.
+> - CT3: (Contribution) Develop and maintain a shared knowledge base for project documentation to (Result) improve information sharing and reduce onboarding time for new team members.
+
+Employee Communication and/or Teamwork Contributions:
+- CT1:
+- CT2:
+- CT3:
+- (Optional: CT4, CT5, etc.)
+
+### Mission Support (MS)
+
+> GUIDANCE: This factor covers your connection to the bigger picture. It reflects your understanding of the organizational mission, your reliability, your stewardship of resources, and your support for broader goals.
+>
+> Think about:
+> - Mission Alignment: How does your work directly advance the organization's strategic goals?
+> - Reliability: How will you demonstrate dependability in meeting deadlines and commitments?
+> - Resource Management: How will you use government resources — time, budget, equipment — efficiently?
+> - Organizational Contribution: How will you support broader initiatives, for example process improvement, safety programs, or command-wide efforts?
+>
+> Example Contributions:
+> - MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
+> - MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
+
+[IF APPLICABLE — Acquisition Coded Position Objective]: State your self-certification statement here, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]."
+
+Employee Mission Support Contributions:
+- MS1:
+- MS2:
+- MS3:
+- (Optional: MS4, MS5, etc.)
+
+---
