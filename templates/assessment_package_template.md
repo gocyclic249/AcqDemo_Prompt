@@ -6,7 +6,7 @@
 
 This document holds every item you will submit to CAS2Net across one AcqDemo appraisal cycle: the Contribution Plan, the Midpoint Assessment, and the Annual Assessment. Complete each section at the point in the cycle where it applies.
 
-Guidance text appears in blockquotes labeled `GUIDANCE`. Delete all guidance text before you paste a section into CAS2Net. Fillable fields appear as blank labels, for example `JA1:`, with no bold, italics, or other Markdown formatting — copy them exactly as written, because CAS2Net fields accept plain text only.
+Guidance text appears in blockquotes labeled `GUIDANCE`. Delete all guidance text before you paste a section into CAS2Net. Fillable fields appear as blank labels, for example `JA1:`, with no bold, italics, or other Markdown formatting. Copy them exactly as written. CAS2Net fields accept plain text only.
 
 Complete the sections in this order:
 
@@ -96,7 +96,7 @@ Employee Communication and/or Teamwork Contributions:
 
 ### Mission Support (MS)
 
-> GUIDANCE: This factor covers your connection to the bigger picture. It reflects your understanding of the organizational mission, your reliability, your stewardship of resources, and your support for broader goals.
+> GUIDANCE: This factor covers how your work supports the organization's mission. It reflects your understanding of that mission, your reliability, your stewardship of resources, and your support for broader goals.
 >
 > Think about:
 > - Mission Alignment: How does your work directly advance the organization's strategic goals?
