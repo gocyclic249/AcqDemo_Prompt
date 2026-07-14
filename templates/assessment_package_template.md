@@ -65,8 +65,6 @@ Brief Summary of Position: Current Value of Position is:
 > - JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
 > - JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
 
-[IF APPLICABLE — Supervisor]: State your supervised counts before JA1, for example "I supervise 0 military, 10 civilians, and manage 6 contractors."
-
 Employee Job Achievement and/or Innovation Contributions:
 - JA1:
 - JA2:
@@ -107,8 +105,6 @@ Employee Communication and/or Teamwork Contributions:
 > Example Contributions:
 > - MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
 > - MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
-
-[IF APPLICABLE — Acquisition Coded Position Objective]: State your self-certification statement here, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]."
 
 Employee Mission Support Contributions:
 - MS1:
