@@ -117,3 +117,45 @@ Employee Mission Support Contributions:
 - (Optional: MS4, MS5, etc.)
 
 ---
+
+## Section 2: Midpoint Assessment
+
+> GUIDANCE: Complete this section in March or April, midway through the appraisal cycle. Source: 2026 AcqDemo Program Guide, Section 7.3, and organizational Midpoint reminders.
+
+### Employee Self-Assessment
+
+> GUIDANCE — Reminders:
+> - Employees must complete a midpoint self-assessment in the W-R-I format.
+> - Midpoints are mini versions of your annual self-assessment — an opportunity to show what you have contributed.
+> - Include at least one W-R-I for each factor. You may include more.
+> - You can copy these W-R-Is into your Annual Assessment.
+
+[IF APPLICABLE — Acquisition Coded Position Objective]: Include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format.
+
+**Job Achievement and/or Innovation**
+(W):
+(R):
+(I):
+
+**Communication and/or Teamwork**
+(W):
+(R):
+(I):
+
+**Mission Support**
+(W):
+(R):
+(I):
+
+### Supervisor Response
+
+> GUIDANCE — Reminders:
+> - Supervisors must complete a written supervisory assessment but do not assign scores at midpoint.
+> - Supervisors must meet with the employee to discuss contribution plan progress, areas needing improvement, assistance available, and expectations for the remainder of the cycle.
+> - Supervisors must document the midpoint assessment discussion in CAS2Net, including the date and method of communication.
+
+Supervisor Response: I agree/disagree with the employee's midpoint assessment. Mr. XXX/Ms. XXX (or the employee) is not meeting/partially meeting/meeting/exceeding expected contributions.
+
+Discussion date and method documented in CAS2Net:
+
+---
