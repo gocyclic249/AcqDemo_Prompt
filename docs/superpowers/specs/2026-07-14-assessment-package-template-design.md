@@ -102,6 +102,7 @@ Mirrors Attachment C structure and content as closely as possible, in fillable f
 
 ## 4. Formatting Conventions
 
+- **Air Force writing style (AFH 33-337, The Tongue and Quill).** This is a formal document, and all prose authored for it — cover instructions, guidance text, and reminder/rule passages not quoted verbatim from the guide or SME — follows AFH 33-337: active voice, subject-verb-object structure, precise and objective language, no colloquialisms, no flowery or subjective wording, tight sentences. This mirrors the style rules already codified in `wri_prompt.txt` and `contribution_plan_prompt.txt`, so the template and the prompts read consistently.
 - Plain Markdown only: `#`/`##` headers and bold labels for structure; no tables.
 - Every guidance/example passage is visually distinguished (blockquote `>` prefix, labeled `GUIDANCE`) from fillable content so a user can delete all guidance in one pass before copying fields into CAS2Net.
 - Fillable fields use a consistent blank marker, e.g. `JA1: ` / `(W): ` / `VALUE OF POSITION: `, with no markdown emphasis inside the blank itself (so bold/asterisks don't get pasted into CAS2Net).
