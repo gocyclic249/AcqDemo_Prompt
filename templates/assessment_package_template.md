@@ -44,22 +44,22 @@ Mission One Level Higher (usually Squadron):
 > <font color="red"> Attachment C instructions:
 </font>
 
-<font color="red"> - Contribution plans should reflect only the expected level of contribution; leave exceedances to the midpoint and annual assessments.
+> <font color="red">Contribution plans should reflect only the expected level of contribution; leave exceedances to the midpoint and annual assessments.
 </font>
 
-<font color="red"> - Write so that other readers, including Pay Pool members, understand what you are communicating.
+> <font color="red">Write so that other readers, including Pay Pool members, understand what you are communicating.
 </font>
 
-<font color="red"> - Use strong SMART objectives.
+> <font color="red">Use strong SMART objectives.
 </font>
 
-<font color="red"> - Use AI tools, and ensure the plan meets the appropriate AcqDemo broadband level, for example NH-III or NH-IV.
+> <font color="red">Use AI tools, and ensure the plan meets the appropriate AcqDemo broadband level, for example NH-III or NH-IV.
 </font>
 
-<font color="red"> - State the Value of Position at the beginning of the Brief Summary of Position.
+> <font color="red">State the Value of Position at the beginning of the Brief Summary of Position.
 </font>
 
-<font color="red"> - Each factor requires a minimum of three (3) labeled expected contributions, for example JA1, CT1, MS1. Align each entry with the appropriate AcqDemo factor descriptors, and write clear, meaningful, measurable expected results.
+> <font color="red">Each factor requires a minimum of three (3) labeled expected contributions, for example JA1, CT1, MS1. Align each entry with the appropriate AcqDemo factor descriptors, and write clear, meaningful, measurable expected results.
 </font>
 
 
@@ -83,16 +83,16 @@ Brief Summary of Position: Current Value of Position is:
 > <font color="red"> Think about:
 </font>
 
-<font color="red"> - Technical Excellence: How will you apply or grow your technical skills on a project?
+> <font color="red">Technical Excellence: How will you apply or grow your technical skills on a project?
 </font>
 
-<font color="red"> - Quality: How will you ensure your work is accurate, thorough, and delivered on time?
+> <font color="red">Quality: How will you ensure your work is accurate, thorough, and delivered on time?
 </font>
 
-<font color="red"> - Problem-Solving: What complex challenges will you solve?
+> <font color="red">Problem-Solving: What complex challenges will you solve?
 </font>
 
-<font color="red"> - Initiative and Innovation: How will you improve a process, develop a new tool, or suggest a creative solution?
+> <font color="red">Initiative and Innovation: How will you improve a process, develop a new tool, or suggest a creative solution?
 </font>
 
 > <font color="red">
@@ -101,13 +101,13 @@ Brief Summary of Position: Current Value of Position is:
 > <font color="red"> Example Contributions:
 </font>
 
-<font color="red"> - JA1: (Contribution) Develop and implement an automated testing script for the ABC software module to (Result) reduce manual testing time by 20% and improve defect detection.
+> <font color="red">JA1: (Contribution) Develop and implement an automated testing script for the ABC software module to (Result) reduce manual testing time by 20% and improve defect detection.
 </font>
 
-<font color="red"> - JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
+> <font color="red">JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
 </font>
 
-<font color="red"> - JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
+> <font color="red">JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
 </font>
 
 
@@ -128,16 +128,16 @@ Employee Job Achievement and/or Innovation Contributions:
 > <font color="red"> Think about:
 </font>
 
-<font color="red"> - Clear Communication: How will you keep teammates and stakeholders informed, for example through meetings, reports, or presentations?
+> <font color="red">Clear Communication: How will you keep teammates and stakeholders informed, for example through meetings, reports, or presentations?
 </font>
 
-<font color="red"> - Collaboration: How will you actively work with others to achieve a shared goal?
+> <font color="red">Collaboration: How will you actively work with others to achieve a shared goal?
 </font>
 
-<font color="red"> - Mentorship and Team Building: How will you help or mentor others?
+> <font color="red">Mentorship and Team Building: How will you help or mentor others?
 </font>
 
-<font color="red"> - Relationship Building: How will you build and maintain effective working relationships across teams or with external partners?
+> <font color="red">Relationship Building: How will you build and maintain effective working relationships across teams or with external partners?
 </font>
 
 > <font color="red">
@@ -146,13 +146,13 @@ Employee Job Achievement and/or Innovation Contributions:
 > <font color="red"> Example Contributions:
 </font>
 
-<font color="red"> - CT1: (Contribution) Facilitate weekly project sync meetings with the Integrated Project Team (IPT), ensuring clear communication of priorities and risks via meeting minutes with Contribution items.
+> <font color="red">CT1: (Contribution) Facilitate weekly project sync meetings with the Integrated Project Team (IPT), ensuring clear communication of priorities and risks via meeting minutes with Contribution items.
 </font>
 
-<font color="red"> - CT2: (Contribution) Mentor one junior engineer on the team by providing regular guidance, (Result) fostering their professional growth and technical skills.
+> <font color="red">CT2: (Contribution) Mentor one junior engineer on the team by providing regular guidance, (Result) fostering their professional growth and technical skills.
 </font>
 
-<font color="red"> - CT3: (Contribution) Develop and maintain a shared knowledge base for project documentation to (Result) improve information sharing and reduce onboarding time for new team members.
+> <font color="red">CT3: (Contribution) Develop and maintain a shared knowledge base for project documentation to (Result) improve information sharing and reduce onboarding time for new team members.
 </font>
 
 
@@ -173,16 +173,16 @@ Employee Communication and/or Teamwork Contributions:
 > <font color="red"> Think about:
 </font>
 
-<font color="red"> - Mission Alignment: How does your work directly advance the organization's strategic goals?
+> <font color="red">Mission Alignment: How does your work directly advance the organization's strategic goals?
 </font>
 
-<font color="red"> - Reliability: How will you demonstrate dependability in meeting deadlines and commitments?
+> <font color="red">Reliability: How will you demonstrate dependability in meeting deadlines and commitments?
 </font>
 
-<font color="red"> - Resource Management: How will you use government resources — time, budget, equipment — efficiently?
+> <font color="red">Resource Management: How will you use government resources — time, budget, equipment — efficiently?
 </font>
 
-<font color="red"> - Organizational Contribution: How will you support broader initiatives, for example process improvement, safety programs, or command-wide efforts?
+> <font color="red">Organizational Contribution: How will you support broader initiatives, for example process improvement, safety programs, or command-wide efforts?
 </font>
 
 > <font color="red">
@@ -191,10 +191,10 @@ Employee Communication and/or Teamwork Contributions:
 > <font color="red"> Example Contributions:
 </font>
 
-<font color="red"> - MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
+> <font color="red">MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
 </font>
 
-<font color="red"> - MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
+> <font color="red">MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
 </font>
 
 
@@ -217,16 +217,16 @@ Employee Mission Support Contributions:
 > <font color="red"> GUIDANCE — Reminders:
 </font>
 
-<font color="red"> - Employees must complete a midpoint self-assessment in the W-R-I format.
+> <font color="red">Employees must complete a midpoint self-assessment in the W-R-I format.
 </font>
 
-<font color="red"> - Midpoints are mini versions of your annual self-assessment — an opportunity to show what you have contributed.
+> <font color="red">Midpoints are mini versions of your annual self-assessment — an opportunity to show what you have contributed.
 </font>
 
-<font color="red"> - Include at least one W-R-I for each factor. You may include more.
+> <font color="red">Include at least one W-R-I for each factor. You may include more.
 </font>
 
-<font color="red"> - You can copy these W-R-Is into your Annual Assessment.
+> <font color="red">You can copy these W-R-Is into your Annual Assessment.
 </font>
 
 
@@ -261,13 +261,13 @@ Employee Mission Support Contributions:
 > <font color="red"> GUIDANCE — Reminders:
 </font>
 
-<font color="red"> - Supervisors must complete a written supervisory assessment but do not assign scores at midpoint.
+> <font color="red">Supervisors must complete a written supervisory assessment but do not assign scores at midpoint.
 </font>
 
-<font color="red"> - Supervisors must meet with the employee to discuss contribution plan progress, areas needing improvement, assistance available, and expectations for the remainder of the cycle.
+> <font color="red">Supervisors must meet with the employee to discuss contribution plan progress, areas needing improvement, assistance available, and expectations for the remainder of the cycle.
 </font>
 
-<font color="red"> - Supervisors must document the midpoint assessment discussion in CAS2Net, including the date and method of communication.
+> <font color="red">Supervisors must document the midpoint assessment discussion in CAS2Net, including the date and method of communication.
 </font>
 
 
@@ -288,13 +288,13 @@ Discussion date and method documented in CAS2Net:
 > <font color="red"> GUIDANCE — Reminders:
 </font>
 
-<font color="red"> - Employees must complete a self-assessment in the W-R-I format.
+> <font color="red">Employees must complete a self-assessment in the W-R-I format.
 </font>
 
-<font color="red"> - Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
+> <font color="red">Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
 </font>
 
-<font color="red"> - Do not duplicate statements from year to year, and do not reuse the same statement across factors.
+> <font color="red">Do not duplicate statements from year to year, and do not reuse the same statement across factors.
 </font>
 
 
@@ -391,19 +391,19 @@ WRI 3
 > <font color="red"> GUIDANCE — Reminders:
 </font>
 
-<font color="red"> - Supervisors do not need to write in W-R-I format, but each factor narrative must begin with the lead-in statement matching the recommended score.
+> <font color="red">Supervisors do not need to write in W-R-I format, but each factor narrative must begin with the lead-in statement matching the recommended score.
 </font>
 
-<font color="red"> - Meeting expected contributions: the employee is scoring at their Expected Overall Contribution Score (EOCS) for the factor. Explain why the factor is met with clear, precise specifics — not flowery language. Include contributions the employee did not report.
+> <font color="red">Meeting expected contributions: the employee is scoring at their Expected Overall Contribution Score (EOCS) for the factor. Explain why the factor is met with clear, precise specifics — not flowery language. Include contributions the employee did not report.
 </font>
 
-<font color="red"> - Exceeding expected contributions: the employee is scoring above their EOCS for the factor. Explain why the factor exceeds with clear, precise specifics. Include significant contributions the employee did not report.
+> <font color="red">Exceeding expected contributions: the employee is scoring above their EOCS for the factor. Explain why the factor exceeds with clear, precise specifics. Include significant contributions the employee did not report.
 </font>
 
-<font color="red"> - Partially meeting expected contributions or Not meeting expected contributions: the employee is scoring below their EOCS for the factor. Clearly describe the inadequate contributions or unmet expectations, based on documented feedback sessions or other supporting evidence from throughout the cycle.
+> <font color="red">Partially meeting expected contributions or Not meeting expected contributions: the employee is scoring below their EOCS for the factor. Clearly describe the inadequate contributions or unmet expectations, based on documented feedback sessions or other supporting evidence from throughout the cycle.
 </font>
 
-<font color="red"> - Each factor narrative must also include one to two sentences explaining how the employee's contributions align with DAF guidance and support the recommended PAQL score.
+> <font color="red">Each factor narrative must also include one to two sentences explaining how the employee's contributions align with DAF guidance and support the recommended PAQL score.
 </font>
 
 
