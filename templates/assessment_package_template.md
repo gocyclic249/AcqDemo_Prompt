@@ -129,18 +129,27 @@ Employee Mission Support Contributions:
 [IF APPLICABLE — Acquisition Coded Position Objective]: Include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format.
 
 **Job Achievement and/or Innovation**
+
 (W):
+
 (R):
+
 (I):
 
 **Communication and/or Teamwork**
+
 (W):
+
 (R):
+
 (I):
 
 **Mission Support**
+
 (W):
+
 (R):
+
 (I):
 
 ### Supervisor Response
@@ -172,18 +181,27 @@ Discussion date and method documented in CAS2Net:
 **Job Achievement and/or Innovation** (minimum 3 W-R-I)
 
 WRI 1
+
 (W):
+
 (R):
+
 (I):
 
 WRI 2
+
 (W):
+
 (R):
+
 (I):
 
 WRI 3
+
 (W):
+
 (R):
+
 (I):
 
 (Optional: additional WRI statements)
@@ -191,18 +209,27 @@ WRI 3
 **Communication and/or Teamwork** (minimum 3 W-R-I)
 
 WRI 1
+
 (W):
+
 (R):
+
 (I):
 
 WRI 2
+
 (W):
+
 (R):
+
 (I):
 
 WRI 3
+
 (W):
+
 (R):
+
 (I):
 
 (Optional: additional WRI statements)
@@ -212,18 +239,27 @@ WRI 3
 **Mission Support** (minimum 3 W-R-I)
 
 WRI 1
+
 (W):
+
 (R):
+
 (I):
 
 WRI 2
+
 (W):
+
 (R):
+
 (I):
 
 WRI 3
+
 (W):
+
 (R):
+
 (I):
 
 (Optional: additional WRI statements)
