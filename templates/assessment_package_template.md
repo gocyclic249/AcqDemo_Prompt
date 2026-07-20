@@ -21,7 +21,8 @@ You can reuse your Mission Context and accomplishments as input to the WRI, Cont
 
 ## Mission Context
 
-> GUIDANCE: Enter your organization's mission statements once. Reference them when you write Impact statements and Contribution Plan objectives throughout the cycle.
+><span style="color:red"> GUIDANCE: Enter your organization's mission statements once. Reference them when you write Impact statements and Contribution Plan objectives throughout the cycle.
+</span>
 
 Mission Two Levels Higher (usually Delta):
 
@@ -33,37 +34,59 @@ Mission One Level Higher (usually Squadron):
 
 ## Section 1: Contribution Plan
 
-> GUIDANCE: Complete this section at the start of a new appraisal cycle, a change in position, or a new appointment. Source: 2026 AcqDemo Program Guide, Attachment C.
->
-> Attachment C instructions:
-> - Contribution plans should reflect only the expected level of contribution; leave exceedances to the midpoint and annual assessments.
-> - Write so that other readers, including Pay Pool members, understand what you are communicating.
-> - Use strong SMART objectives.
-> - Use AI tools, and ensure the plan meets the appropriate AcqDemo broadband level, for example NH-III or NH-IV.
-> - State the Value of Position at the beginning of the Brief Summary of Position.
-> - Each factor requires a minimum of three (3) labeled expected contributions, for example JA1, CT1, MS1. Align each entry with the appropriate AcqDemo factor descriptors, and write clear, meaningful, measurable expected results.
+><span style="color:red"> GUIDANCE: Complete this section at the start of a new appraisal cycle, a change in position, or a new appointment. Source: 2026 AcqDemo Program Guide, Attachment C.
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Attachment C instructions:
+</span>
+><span style="color:red"> - Contribution plans should reflect only the expected level of contribution; leave exceedances to the midpoint and annual assessments.
+</span>
+><span style="color:red"> - Write so that other readers, including Pay Pool members, understand what you are communicating.
+</span>
+><span style="color:red"> - Use strong SMART objectives.
+</span>
+><span style="color:red"> - Use AI tools, and ensure the plan meets the appropriate AcqDemo broadband level, for example NH-III or NH-IV.
+</span>
+><span style="color:red"> - State the Value of Position at the beginning of the Brief Summary of Position.
+</span>
+><span style="color:red"> - Each factor requires a minimum of three (3) labeled expected contributions, for example JA1, CT1, MS1. Align each entry with the appropriate AcqDemo factor descriptors, and write clear, meaningful, measurable expected results.
+</span>
 
 VALUE OF POSITION:
 
 Brief Summary of Position: Current Value of Position is:
-> GUIDANCE: In 2–3 lines, describe your primary duties, mission result, and scope of responsibility. Example: "Current Value of Position is: 93. Provides engineering expertise to support planning, analysis, design, integration, and execution of technical solutions for assigned programs. Ensures technical rigor, compliance with standards, and alignment with mission objectives."
+><span style="color:red"> GUIDANCE: In 2–3 lines, describe your primary duties, mission result, and scope of responsibility. Example: "Current Value of Position is: 93. Provides engineering expertise to support planning, analysis, design, integration, and execution of technical solutions for assigned programs. Ensures technical rigor, compliance with standards, and alignment with mission objectives."
+</span>
 
 
 
 ### Job Achievement and/or Innovation (JA)
 
-> GUIDANCE: This factor covers what you accomplish. It reflects your technical expertise, quality of work, problem-solving, initiative, and innovation.
->
-> Think about:
-> - Technical Excellence: How will you apply or grow your technical skills on a project?
-> - Quality: How will you ensure your work is accurate, thorough, and delivered on time?
-> - Problem-Solving: What complex challenges will you solve?
-> - Initiative and Innovation: How will you improve a process, develop a new tool, or suggest a creative solution?
->
-> Example Contributions:
-> - JA1: (Contribution) Develop and implement an automated testing script for the ABC software module to (Result) reduce manual testing time by 20% and improve defect detection.
-> - JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
-> - JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
+><span style="color:red"> GUIDANCE: This factor covers what you accomplish. It reflects your technical expertise, quality of work, problem-solving, initiative, and innovation.
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Think about:
+</span>
+><span style="color:red"> - Technical Excellence: How will you apply or grow your technical skills on a project?
+</span>
+><span style="color:red"> - Quality: How will you ensure your work is accurate, thorough, and delivered on time?
+</span>
+><span style="color:red"> - Problem-Solving: What complex challenges will you solve?
+</span>
+><span style="color:red"> - Initiative and Innovation: How will you improve a process, develop a new tool, or suggest a creative solution?
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Example Contributions:
+</span>
+><span style="color:red"> - JA1: (Contribution) Develop and implement an automated testing script for the ABC software module to (Result) reduce manual testing time by 20% and improve defect detection.
+</span>
+><span style="color:red"> - JA2: (Contribution) Lead the redesign of the user interface for the legacy system, resulting in (Result) a 15% improvement in user-reported satisfaction.
+</span>
+><span style="color:red"> - JA3: (Contribution) Author a technical white paper on applying AI to our data analysis process to (Result) share best practices and establish our team as a subject matter expert.
+</span>
 
 Employee Job Achievement and/or Innovation Contributions:
 - JA1:
@@ -73,18 +96,30 @@ Employee Job Achievement and/or Innovation Contributions:
 
 ### Communication and/or Teamwork (CT)
 
-> GUIDANCE: This factor covers how you work with others. It reflects your clarity in communication, collaboration, responsiveness, and ability to foster positive team dynamics.
->
-> Think about:
-> - Clear Communication: How will you keep teammates and stakeholders informed, for example through meetings, reports, or presentations?
-> - Collaboration: How will you actively work with others to achieve a shared goal?
-> - Mentorship and Team Building: How will you help or mentor others?
-> - Relationship Building: How will you build and maintain effective working relationships across teams or with external partners?
->
-> Example Contributions:
-> - CT1: (Contribution) Facilitate weekly project sync meetings with the Integrated Project Team (IPT), ensuring clear communication of priorities and risks via meeting minutes with Contribution items.
-> - CT2: (Contribution) Mentor one junior engineer on the team by providing regular guidance, (Result) fostering their professional growth and technical skills.
-> - CT3: (Contribution) Develop and maintain a shared knowledge base for project documentation to (Result) improve information sharing and reduce onboarding time for new team members.
+><span style="color:red"> GUIDANCE: This factor covers how you work with others. It reflects your clarity in communication, collaboration, responsiveness, and ability to foster positive team dynamics.
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Think about:
+</span>
+><span style="color:red"> - Clear Communication: How will you keep teammates and stakeholders informed, for example through meetings, reports, or presentations?
+</span>
+><span style="color:red"> - Collaboration: How will you actively work with others to achieve a shared goal?
+</span>
+><span style="color:red"> - Mentorship and Team Building: How will you help or mentor others?
+</span>
+><span style="color:red"> - Relationship Building: How will you build and maintain effective working relationships across teams or with external partners?
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Example Contributions:
+</span>
+><span style="color:red"> - CT1: (Contribution) Facilitate weekly project sync meetings with the Integrated Project Team (IPT), ensuring clear communication of priorities and risks via meeting minutes with Contribution items.
+</span>
+><span style="color:red"> - CT2: (Contribution) Mentor one junior engineer on the team by providing regular guidance, (Result) fostering their professional growth and technical skills.
+</span>
+><span style="color:red"> - CT3: (Contribution) Develop and maintain a shared knowledge base for project documentation to (Result) improve information sharing and reduce onboarding time for new team members.
+</span>
 
 Employee Communication and/or Teamwork Contributions:
 - CT1:
@@ -94,17 +129,28 @@ Employee Communication and/or Teamwork Contributions:
 
 ### Mission Support (MS)
 
-> GUIDANCE: This factor covers how your work supports the organization's mission. It reflects your understanding of that mission, your reliability, your stewardship of resources, and your support for broader goals.
->
-> Think about:
-> - Mission Alignment: How does your work directly advance the organization's strategic goals?
-> - Reliability: How will you demonstrate dependability in meeting deadlines and commitments?
-> - Resource Management: How will you use government resources — time, budget, equipment — efficiently?
-> - Organizational Contribution: How will you support broader initiatives, for example process improvement, safety programs, or command-wide efforts?
->
-> Example Contributions:
-> - MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
-> - MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
+><span style="color:red"> GUIDANCE: This factor covers how your work supports the organization's mission. It reflects your understanding of that mission, your reliability, your stewardship of resources, and your support for broader goals.
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Think about:
+</span>
+><span style="color:red"> - Mission Alignment: How does your work directly advance the organization's strategic goals?
+</span>
+><span style="color:red"> - Reliability: How will you demonstrate dependability in meeting deadlines and commitments?
+</span>
+><span style="color:red"> - Resource Management: How will you use government resources — time, budget, equipment — efficiently?
+</span>
+><span style="color:red"> - Organizational Contribution: How will you support broader initiatives, for example process improvement, safety programs, or command-wide efforts?
+</span>
+><span style="color:red">
+</span>
+><span style="color:red"> Example Contributions:
+</span>
+><span style="color:red"> - MS1: (Contribution) Identify and document at least two process improvement opportunities within our division's workflow, (Result) presenting recommendations to leadership for consideration.
+</span>
+><span style="color:red"> - MS2: (Contribution) Serve as the team lead for the annual Combined Federal Campaign (CFC) drive to (Result) support a key organizational initiative and promote community engagement.
+</span>
 
 Employee Mission Support Contributions:
 - MS1:
@@ -116,15 +162,21 @@ Employee Mission Support Contributions:
 
 ## Section 2: Midpoint Assessment
 
-> GUIDANCE: Complete this section in March or April, midway through the appraisal cycle. Source: 2026 AcqDemo Program Guide, Section 7.3, and organizational Midpoint reminders.
+><span style="color:red"> GUIDANCE: Complete this section in March or April, midway through the appraisal cycle. Source: 2026 AcqDemo Program Guide, Section 7.3, and organizational Midpoint reminders.
+</span>
 
 ### Employee Self-Assessment
 
-> GUIDANCE — Reminders:
-> - Employees must complete a midpoint self-assessment in the W-R-I format.
-> - Midpoints are mini versions of your annual self-assessment — an opportunity to show what you have contributed.
-> - Include at least one W-R-I for each factor. You may include more.
-> - You can copy these W-R-Is into your Annual Assessment.
+><span style="color:red"> GUIDANCE — Reminders:
+</span>
+><span style="color:red"> - Employees must complete a midpoint self-assessment in the W-R-I format.
+</span>
+><span style="color:red"> - Midpoints are mini versions of your annual self-assessment — an opportunity to show what you have contributed.
+</span>
+><span style="color:red"> - Include at least one W-R-I for each factor. You may include more.
+</span>
+><span style="color:red"> - You can copy these W-R-Is into your Annual Assessment.
+</span>
 
 [IF APPLICABLE — Acquisition Coded Position Objective]: Include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format.
 
@@ -154,10 +206,14 @@ Employee Mission Support Contributions:
 
 ### Supervisor Response
 
-> GUIDANCE — Reminders:
-> - Supervisors must complete a written supervisory assessment but do not assign scores at midpoint.
-> - Supervisors must meet with the employee to discuss contribution plan progress, areas needing improvement, assistance available, and expectations for the remainder of the cycle.
-> - Supervisors must document the midpoint assessment discussion in CAS2Net, including the date and method of communication.
+><span style="color:red"> GUIDANCE — Reminders:
+</span>
+><span style="color:red"> - Supervisors must complete a written supervisory assessment but do not assign scores at midpoint.
+</span>
+><span style="color:red"> - Supervisors must meet with the employee to discuss contribution plan progress, areas needing improvement, assistance available, and expectations for the remainder of the cycle.
+</span>
+><span style="color:red"> - Supervisors must document the midpoint assessment discussion in CAS2Net, including the date and method of communication.
+</span>
 
 Supervisor Response: I agree/disagree with the employee's midpoint assessment. Mr. XXX/Ms. XXX (or the employee) is not meeting/partially meeting/meeting/exceeding expected contributions.
 
@@ -167,14 +223,19 @@ Discussion date and method documented in CAS2Net:
 
 ## Section 3: Annual Assessment
 
-> GUIDANCE: Complete this section by 30 September. Source: 2026 AcqDemo Program Guide, Section 7.5.
+><span style="color:red"> GUIDANCE: Complete this section by 30 September. Source: 2026 AcqDemo Program Guide, Section 7.5.
+</span>
 
 ### Employee Self-Assessment
 
-> GUIDANCE — Reminders:
-> - Employees must complete a self-assessment in the W-R-I format.
-> - Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
-> - Do not duplicate statements from year to year, and do not reuse the same statement across factors.
+><span style="color:red"> GUIDANCE — Reminders:
+</span>
+><span style="color:red"> - Employees must complete a self-assessment in the W-R-I format.
+</span>
+><span style="color:red"> - Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
+</span>
+><span style="color:red"> - Do not duplicate statements from year to year, and do not reuse the same statement across factors.
+</span>
 
 [IF APPLICABLE — mandatory Supervisory Objective]: Before any W-R-I statement in Job Achievement and/or Innovation, state how many military members, civilian employees, and contractors you supervise or manage, for example "I supervise 0 military, 10 civilians, and manage 6 contractors." Then describe, in paragraph form and not W-R-I format, how you met the supervisory objective. This statement does not count toward the three required W-R-I statements for this factor.
 
@@ -266,12 +327,18 @@ WRI 3
 
 ### Supervisor Response
 
-> GUIDANCE — Reminders:
-> - Supervisors do not need to write in W-R-I format, but each factor narrative must begin with the lead-in statement matching the recommended score.
-> - Meeting expected contributions: the employee is scoring at their Expected Overall Contribution Score (EOCS) for the factor. Explain why the factor is met with clear, precise specifics — not flowery language. Include contributions the employee did not report.
-> - Exceeding expected contributions: the employee is scoring above their EOCS for the factor. Explain why the factor exceeds with clear, precise specifics. Include significant contributions the employee did not report.
-> - Partially meeting expected contributions or Not meeting expected contributions: the employee is scoring below their EOCS for the factor. Clearly describe the inadequate contributions or unmet expectations, based on documented feedback sessions or other supporting evidence from throughout the cycle.
-> - Each factor narrative must also include one to two sentences explaining how the employee's contributions align with DAF guidance and support the recommended PAQL score.
+><span style="color:red"> GUIDANCE — Reminders:
+</span>
+><span style="color:red"> - Supervisors do not need to write in W-R-I format, but each factor narrative must begin with the lead-in statement matching the recommended score.
+</span>
+><span style="color:red"> - Meeting expected contributions: the employee is scoring at their Expected Overall Contribution Score (EOCS) for the factor. Explain why the factor is met with clear, precise specifics — not flowery language. Include contributions the employee did not report.
+</span>
+><span style="color:red"> - Exceeding expected contributions: the employee is scoring above their EOCS for the factor. Explain why the factor exceeds with clear, precise specifics. Include significant contributions the employee did not report.
+</span>
+><span style="color:red"> - Partially meeting expected contributions or Not meeting expected contributions: the employee is scoring below their EOCS for the factor. Clearly describe the inadequate contributions or unmet expectations, based on documented feedback sessions or other supporting evidence from throughout the cycle.
+</span>
+><span style="color:red"> - Each factor narrative must also include one to two sentences explaining how the employee's contributions align with DAF guidance and support the recommended PAQL score.
+</span>
 
 **Job Achievement and/or Innovation**
 Meeting/Exceeding/Partially meeting/Not meeting expected contributions.
