@@ -171,7 +171,7 @@ Include at least one W-R-I for each factor. You may include more.
 You can copy these W-R-Is into your Annual Assessment.
 ```
 
-[IF APPLICABLE — Acquisition Coded Position Objective]: Include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format.
+*IF APPLICABLE — Acquisition Coded Position Objective]: Include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format.*
 
 ***Job Achievement and/or Innovation***
 
@@ -227,12 +227,12 @@ GUIDANCE — Reminders:
 
 Employees must complete a self-assessment in the W-R-I format.
 
-Write a minimum of three (3) W-R-I statements per factor — nine (9) total. [IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.
+Write a minimum of three (3) W-R-I statements per factor — nine (9) total. *IF APPLICABLE — first-year organization, current cycle only]: write a minimum of two (2) W-R-I statements per factor — six (6) total. The following cycle requires three (3) per factor.*
 
 Do not duplicate statements from year to year, and do not reuse the same statement across factors.
 ```
 
-[IF APPLICABLE — mandatory Supervisory Objective]: Before any W-R-I statement in Job Achievement and/or Innovation, state how many military members, civilian employees, and contractors you supervise or manage, for example "I supervise 0 military, 10 civilians, and manage 6 contractors." Then describe, in paragraph form and not W-R-I format, how you met the supervisory objective. This statement does not count toward the three required W-R-I statements for this factor.
+*IF APPLICABLE — mandatory Supervisory Objective]: Before any W-R-I statement in Job Achievement and/or Innovation, state how many military members, civilian employees, and contractors you supervise or manage, for example "I supervise 0 military, 10 civilians, and manage 6 contractors." Then describe, in paragraph form and not W-R-I format, how you met the supervisory objective. This statement does not count toward the three required W-R-I statements for this factor.*
 
 ***Job Achievement and/or Innovation***
 
@@ -294,7 +294,7 @@ WRI 3
 
 *(Optional: additional WRI statements)*
 
-[IF APPLICABLE — Acquisition Coded Position Objective]: Before your W-R-I statements in Mission Support, include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format and does not count toward the three required W-R-I statements for this factor.
+*IF APPLICABLE — Acquisition Coded Position Objective]: Before your W-R-I statements in Mission Support, include your self-certification statement, for example "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]." This statement does not need to be in W-R-I format and does not count toward the three required W-R-I statements for this factor.*
 
 ***Mission Support***
 
