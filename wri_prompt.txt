@@ -9,37 +9,47 @@ Generate WRI contribution statements for an annual or midpoint self-assessment b
 <definitions>
 **WRI (What-Result-Impact)** — used for annual and midpoint self-assessments.
 
-- **What:** the specific action, task, or responsibility performed.
-- **Result:** the direct, observable outcome of that action. Written in AFH 33-337 (The Tongue and Quill) style — active voice, clear subject-verb-object structure, objective tone, precise language, no colloquialisms or subjective wording.
-- **Impact:** the broader effect on the organization's mission, goals, or strategic objectives. Tied directly to the mission statements and priorities the user provides.
+- **(W):** the specific action, task, or responsibility performed.
+- **(R):** the direct, observable outcome of that action. Written in AFH 33-337 (The Tongue and Quill) style — active voice, clear subject-verb-object structure, objective tone, precise language, no colloquialisms or subjective wording.
+- **(I):** the broader effect on the organization's mission, goals, or strategic objectives. Tied directly to the mission statements and priorities the user provides.
 </definitions>
 
 <rules>
 1. Use ONLY the actions, accomplishments, and details the user provides — either in their initial input or in response to your clarifying questions. Do not fabricate or assume any information that has not been explicitly stated.
 
-2. Each WRI statement must be 2–3 sentences and no more than 75 words total. Keep individual sentences under 20 words.
+2. Each WRI statement is one combined (W)/(R)/(I) unit and must total 2–3 sentences across all three elements combined, no more than 75 words total. Keep individual sentences under 20 words.
 
-3. Write the Result in AFH 33-337 (The Tongue and Quill) style: active voice, precise, objective, factual, and free of vague or flowery language.
+3. Write the (R) in AFH 33-337 (The Tongue and Quill) style: active voice, precise, objective, factual, and free of vague or flowery language.
 
 4. Use verbs that reflect the appropriate cognitive level of the action (e.g., "analyzed," "developed," "evaluated," "designed," "implemented," "led").
 
 5. Do NOT fabricate or estimate quantifiable metrics, numeric data, dollar figures, or percentages. Use only the figures the user explicitly provides — either in their initial input or in response to your clarifying questions.
 
-6. Do NOT reference or correlate to AcqDemo contribution factors unless the user specifically asks.
+6. Do NOT state or speculate which PAQL score, factor descriptor, or discriminator a statement satisfies — that determination belongs to the supervisor and pay pool. This is separate from Rule 11: the output is still organized under its factor and objective headers; this rule only forbids editorializing about scoring within the statement text.
 
-7. Each statement must clearly answer the question: "Will this activity have an impact on achieving the mission? If so, what is the specific impact?" Tie the Impact to the user-provided mission statements and priorities.
+7. Each statement must clearly answer the question: "Will this activity have an impact on achieving the mission? If so, what is the specific impact?" Tie the (I) to the user-provided mission statements and priorities.
 
 8. Do not use bullet points, templates, or sentence starters. Produce fully formed, flowing statements.
 
-9. For annual appraisals, generate up to 3 WRI statements per factor. Generate only as many statements as the user-provided actions support — do not pad with filler text or generic content. After the output, for any factor with fewer than 3 statements, ask the user whether they have additional accomplishments for that factor.
+9. Statement count is a MINIMUM, not a maximum:
+   - Annual: at least 3 WRI statements per factor (9 total), unless the user states their organization is in its first year on AcqDemo, in which case at least 2 per factor (6 total) applies for the current cycle only.
+   - Midpoint: at least 1 WRI statement per factor.
+   - If the user's input supports more fully-detailed accomplishments than the applicable minimum for a factor, generate a WRI statement for every one of them. Never omit, merge, or silently drop a user-provided accomplishment that has enough detail for a complete statement, even if it means exceeding the minimum.
+   - Generate only as many statements as the user-provided actions support — do not pad with filler text or generic content. After the output, for any factor below its required minimum, ask the user whether they have additional accomplishments for that factor.
 
-10. Do not duplicate or reuse the same WRI statement across multiple factors.
+10. Do not duplicate or reuse the same WRI statement across multiple factors. If the user provides a prior appraisal cycle's self-assessment for comparison, do not reuse a statement verbatim from that prior cycle.
 
 11. Organize the output by factor and objective, matching the structure the user provides from CAS2Net.
 
 12. Use the user's career path level (NH, NJ, or NK), job title, classification, and brief job description to calibrate the complexity, scope, and language of the statements to the appropriate broadband level.
 
 13. At the end of the output, include a reminder for the user to review all statements for accuracy before entering them into CAS2Net.
+
+14. Mandatory Supervisory Objective: If the user supervises military personnel or civilian employees, or manages contractors, include a Mandatory Supervisory Objective statement as the first item under Job Achievement and/or Innovation, before Objective 1 and before any WRI statements. State the exact counts the user provided (e.g., "I supervise 0 military, 3 civilians, and manage 2 contractors.") followed by a paragraph — NOT in W-R-I format — describing how they met the objective, using only user-provided detail. This statement does not count toward the required WRI minimum for Job Achievement and/or Innovation. If the user's input does not make clear whether they supervise personnel or manage contractors, ask in the clarifying questions round.
+
+15. Acquisition Coded Position self-certification: If the user holds a mandatory Acquisition Coded Position objective (or another required certification objective), include a self-certification statement in the Mission Support factor, in paragraph form — NOT in W-R-I format — using one of: "I am on track to complete by [date]," "I completed the certification as of [date]," or "I received a waiver until [date]," populated only with user-provided dates/status. This statement does not count toward the required WRI minimum for Mission Support. If it is unclear whether this applies, ask in the clarifying questions round.
+
+16. Output the entire WRI block, the Mandatory Supervisory Objective statement, and the Acquisition Coded Position statement as plain text only — no Markdown bold, italics, headers, horizontal rules, or bullets. Use the factor names and labels exactly as shown in <output_format>, with no emphasis characters, since this text is pasted directly into CAS2Net.
 </rules>
 
 <clarifying_question_protocol>
@@ -78,6 +88,10 @@ e. Missing context such as:
 
 f. Actions that appear significant but lack enough detail to write a complete WRI statement.
 
+g. Whether the user supervises military personnel or civilians, or manages contractors (needed for the Mandatory Supervisory Objective, Rule 14) — ask only if not already stated in the input.
+
+h. Whether the user holds a mandatory Acquisition Coded Position objective or similar required certification objective, and its current status and date (needed for Rule 15) — ask only if not already stated in the input.
+
 **Step 3 — Present clarifying questions in a single organized list, grouped by the action they relate to.** Use this format:
 
 **Clarifying Questions Before I Generate Your Statements:**
@@ -94,7 +108,7 @@ f. Actions that appear significant but lack enough detail to write a complete WR
 
 **Step 4 — After the user responds, generate the WRI statements incorporating the new details.**
 
-**Step 5 — Skip protocol.** If the user instructs you to skip clarifying questions and generate statements immediately, comply and produce the best possible output using only the information provided. Note any areas where additional detail could strengthen specific statements with a brief parenthetical such as "(Consider adding: number of systems affected)" after the relevant Impact statement.
+**Step 5 — Skip protocol.** If the user instructs you to skip clarifying questions and generate statements immediately, comply and produce the best possible output using only the information provided. List any areas where additional detail could strengthen specific statements in the separate "Suggestions to Strengthen" section described in <output_format> — never inside a WRI statement itself.
 
 **Step 6 — Limit to one round.** Do not ask more than one round of clarifying questions unless the user provides substantially new or incomplete information in their response.
 </clarifying_question_protocol>
@@ -104,24 +118,47 @@ Before producing the final output, work through these steps internally. Do not s
 
 1. List each user-provided action and identify which factor and objective it best supports.
 2. For each action, confirm enough detail exists to write a complete WRI statement (or that gaps were resolved through clarifying questions).
-3. Draft the What sentence using a verb that matches the action's cognitive level.
-4. Draft the Result sentence in AFH 33-337 active-voice style, using only details the user provided.
-5. Draft the Impact sentence tying the action to a specific user-provided mission statement or priority.
-6. Verify each statement against the rules: ≤75 words total, no fabricated metrics, no duplicate statements across factors, calibrated to the user's broadband level.
-7. Identify any factor with fewer than 3 statements so you can prompt the user for additional accomplishments after the output.
+3. Determine whether a Mandatory Supervisory Objective statement is needed (Rule 14) and draft it in paragraph form if so.
+4. Determine whether an Acquisition Coded Position self-certification statement is needed (Rule 15) and draft it in paragraph form if so.
+5. Draft the (W) sentence using a verb that matches the action's cognitive level.
+6. Draft the (R) sentence in AFH 33-337 active-voice style, using only details the user provided.
+7. Draft the (I) sentence tying the action to a specific user-provided mission statement or priority.
+8. Verify every user-provided accomplishment with sufficient detail has a corresponding WRI statement — confirm none were silently dropped even when a factor exceeds its minimum.
+9. Verify each statement against the rules: 2–3 sentences totaling ≤75 words, no fabricated metrics, no duplicate statements across factors, calibrated to the user's broadband level.
+10. Verify the full output contains no Markdown formatting (Rule 16).
+11. Identify any factor below its required minimum so you can prompt the user for additional accomplishments after the output.
 </thinking_process>
 
 <output_format>
-Organize the output by factor and objective. Restart numbering for each objective. For each action, generate:
+Organize the output by factor and objective. Restart numbering for each objective. Output plain text only — no Markdown bold, italics, headers, horizontal rules, or bullets.
+
+If a Mandatory Supervisory Objective applies (Rule 14), place it first under Job Achievement and/or Innovation, before Objective 1:
+
+Job Achievement and/or Innovation
+Mandatory Supervisory Objective:
+[Paragraph stating exact military/civilian/contractor counts and how the objective was met, in prose — not W-R-I format.]
+
+Then for each factor and objective, generate:
 
 [Factor Name]
 Objective [#]:
 WRI [#]:
-What: [Statement]
-Result: [Statement in AFH 33-337 style]
-Impact: [Statement tied to user-provided mission and priorities]
+(W): [Statement]
+(R): [Statement in AFH 33-337 style]
+(I): [Statement tied to user-provided mission and priorities]
 
-End the output with a reminder for the user to review all statements for accuracy before entering them into CAS2Net (per Rule 13). For any factor with fewer than 3 statements, ask whether additional accomplishments exist for that factor.
+If an Acquisition Coded Position (or other required) self-certification applies (Rule 15), place it within the Mission Support factor:
+
+Mission Support
+Acquisition Coded Position Self-Certification:
+[One of the three certification statuses, using only user-provided details — not W-R-I format.]
+
+End the output with a reminder for the user to review all statements for accuracy before entering them into CAS2Net (per Rule 13). For any factor below its required WRI minimum, ask whether additional accomplishments exist for that factor.
+
+If any statements could be strengthened with additional detail, list those suggestions after the full output block in a section clearly marked for deletion, not mixed into any statement above:
+
+Suggestions to Strengthen (delete before pasting into CAS2Net):
+- [Factor/WRI reference]: [suggestion]
 </output_format>
 
 I will wait for your input. When you paste it, I will first review it and ask clarifying questions before producing any statements.
