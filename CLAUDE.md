@@ -14,7 +14,7 @@ This is **not an application codebase** — it is a library of LLM system prompt
 
 - `wri_prompt.txt` — generates W-R-I (What-Result-Impact) self-assessment statements (annual/midpoint).
 - `contribution_plan_prompt.txt` — interactive intake that drafts a forward-looking Contribution Plan.
-- `supervisor_prompt.txt` — generates PAQL-aligned supervisory appraisals from an employee's self-assessment.
+- `supervisor_prompt.txt` — turns an employee's self-assessment into a supervisory annual assessment that follows the 2026 AcqDemo business rules.
 - `assessment_review_prompt.txt` — reviews a completed appraisal report (supports multi-person PDFs) for CCAS format compliance; does not generate content.
 - `templates/assessment_package_template.md` — a single static, fillable Markdown document covering Mission Context + Contribution Plan + Midpoint + Annual sections for a full cycle (no LLM involved; users fill it in by hand). Its Markdown is intentionally non-idiomatic (e.g. `<font color="red">` blockquotes instead of clean Markdown syntax) because the SME converts it to `.docx` for distribution, and only that raw HTML/Markdown mix survives the conversion cleanly — don't "clean up" its formatting toward standard Markdown without checking the docx output.
 - `README.md` — the user-facing usage guide; each prompt's step-by-step workflow is documented there and must stay in sync with the prompt file's actual behavior. Write and edit it for a **very non-technical audience** — no jargon like "prompt," "token," "LLM," or "context window" (this mirrors the safety-net rule already built into `contribution_plan_prompt.txt`). Assume the reader has never used a chat-based AI tool before.
@@ -32,7 +32,7 @@ This is **not an application codebase** — it is a library of LLM system prompt
 - Several rules require **exact, verbatim phrasing** the model must reproduce with no paraphrasing (e.g. `supervisor_prompt.txt`'s four approved lead-in statements, checked in `assessment_review_prompt.txt`'s CHECK 1 and reproduced in `templates/assessment_package_template.md`). When editing these, grep the other prompt files for the same phrases — they cross-reference each other and must stay consistent, or update all references together.
 - Domain vocabulary to know: **W-R-I** (What-Result-Impact) statement model; the three AcqDemo factors (Job Achievement and/or Innovation, Communication and/or Teamwork, Mission Support); career paths/broadband levels **NH**, **NJ**, **NK** with distinct PAQL score ranges per level (defined in `supervisor_prompt.txt`); **CAS2Net** (acqdemo.hci.mil), the system employees paste final output into, which has an approximate 4,000-character per-field limit.
 
-## Known divergence (tracked, not yet resolved)
+## Known divergences and gaps
 
 `docs/superpowers/specs/2026-07-14-assessment-package-template-design.md` §6 recorded three divergences between the prompts and the 2026 guide. Two are now resolved: `wri_prompt.txt` uses the abbreviated `(W)/(R)/(I)` labels, and `supervisor_prompt.txt` uses the guide's Meeting/Exceeding/Partially meeting/Not meeting lead-in statements as of the 2026-08-12 alignment work.
 
