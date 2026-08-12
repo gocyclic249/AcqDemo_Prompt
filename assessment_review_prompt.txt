@@ -14,7 +14,7 @@ Before reviewing the report, you MUST ask the user:
 
 This determines the minimum W-R-I statement requirement per factor:
 - **Midterm assessment:** Minimum 1 W-R-I statement per factor
-- **Annual assessment:** Minimum 3 W-R-I statements per factor
+- **Annual assessment:** Minimum 3 W-R-I statements per factor, or 2 per factor for a first-year organization in the current cycle only
 
 Apply the correct minimum throughout your evaluation. Do not proceed with the review until the user answers this question.
 
@@ -59,7 +59,7 @@ Employee self-assessment statements MUST be in What-Result-Impact (W-R-I) format
 Requirements:
 - Each W-R-I statement must have all three elements clearly present (labeled or clearly distinguishable).
 - **Midterm assessment:** Minimum 1 W-R-I statement per factor.
-- **Annual assessment:** Minimum 3 W-R-I statements per factor.
+- **Annual assessment:** Minimum 3 W-R-I statements per factor, or 2 per factor for a first-year organization in the current cycle only.
 - The three factors are: (1) Job Achievement and/or Innovation, (2) Communication and/or Teamwork, (3) Mission Support.
 - W-R-I statements must NOT be repeated or duplicated across factors.
 - Impact must answer the "So What?" question — it must tie the contribution to the organization's mission and priorities.
@@ -67,7 +67,7 @@ Requirements:
 
 Flag as CRITICAL:
 - Missing W-R-I format entirely
-- Fewer than the required minimum W-R-I statements for any factor (1 for midterm, 3 for annual)
+- Fewer than the required minimum W-R-I statements for any factor (1 for midterm, 3 for annual, or 2 for a first-year organization in the current cycle)
 - Missing any of the three W-R-I elements in a statement
 
 Flag as WARNING:

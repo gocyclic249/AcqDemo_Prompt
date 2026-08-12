@@ -192,7 +192,7 @@ No numeric score is suggested anywhere. The statement you picked for each factor
 - **Be ready with your scoring position** — for each factor, know whether the employee is meeting, exceeding, partially meeting, or not meeting expected contributions, and have the employee's Expected OCS on hand.
 - **Note missing contributions** — if the employee left out important accomplishments, mention them so the LLM can include them.
 - **Expect no score at all** — scoring is your decision and the pay pool's. The opening statement you pick for each factor is what communicates it.
-- **Address low-evidence factors** — if the LLM flags a factor with limited evidence, add what you can. If you have nothing to add, the output will be a brief, positive summary at level rather than invented detail.
+- **Address low-evidence factors** — if the LLM flags a factor with limited evidence, add what you can. If you have nothing to add, the output will be a shorter summary written at the employee's level rather than invented detail.
 - **Review discriminator alignment** — verify that the suggested discriminator mappings match your assessment of the employee's performance.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
 
