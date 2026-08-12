@@ -3,7 +3,7 @@
 An LLM-assisted toolkit for AcqDemo performance management, including:
 - **Self-Assessment Statement Generator** (`wri_prompt.txt`) — generates W-R-I (What-Result-Impact) contribution statements from a simple list of accomplishments for annual and midpoint self-assessments.
 - **Contribution Plan Generator** (`contribution_plan_prompt.txt`) — guides an interactive intake and generates a forward-looking, regulation-compliant Contribution Plan ready to paste directly into CAS2Net at the start of a new appraisal cycle.
-- **Supervisor Assessment Generator** (`supervisor_prompt.txt`) — generates PAQL-aligned supervisory appraisals from an employee's self-assessment contribution statements.
+- **Supervisor Assessment Generator** (`supervisor_prompt.txt`) — turns an employee's self-assessment into a supervisory annual assessment that follows the 2026 AcqDemo business rules.
 - **Assessment Format Reviewer** (`assessment_review_prompt.txt`) — evaluates completed annual or midterm appraisal reports for correct formatting, structural completeness, and CCAS compliance. Supports multi-person PDFs.
 
 **Classification: UNCLASSIFIED** — This tool and its prompts are UNCLASSIFIED. Content becomes CUI when user-specific performance data is entered. Do not include classified information in any inputs.
@@ -12,8 +12,8 @@ An LLM-assisted toolkit for AcqDemo performance management, including:
 
 | Setting | Value |
 |---------|-------|
-| Platform | chat.genai.army.mil |
-| Model | Claude 4.6 O |
+| Platform | https://genai.mil/ |
+| Model | Gemini 3.1 Pro (Gemini 3.6 Flash also works if Pro is unavailable) |
 | Temperature | 0.7 |
 | Deep Agent | False |
 
@@ -23,7 +23,7 @@ Use this prompt for **annual and midpoint self-assessments** — turning your pa
 
 ### Step 1: Paste the Prompt as Your First Message
 
-Open `wri_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field). This sets up the LLM with the rules and format for generating your statements.
+Open `wri_prompt.txt` and copy its entire contents. Start a new conversation on https://genai.mil/ and paste it as your first message in the chat window (not into a system prompt field). This sets up the LLM with the rules and format for generating your statements.
 
 ### Step 2: Fill In the Template Below and Paste It Into the Same Chat Window
 
@@ -104,7 +104,7 @@ Use this prompt for **contribution planning** at the start of the appraisal cycl
 
 ### Step 1: Paste the Prompt as Your First Message
 
-Open `contribution_plan_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field).
+Open `contribution_plan_prompt.txt` and copy its entire contents. Start a new conversation on https://genai.mil/ and paste it as your first message in the chat window (not into a system prompt field).
 
 ### Step 2: Provide the Intake Items
 
@@ -150,7 +150,7 @@ Review every objective for accuracy, ensure all facts and figures reflect your a
 
 ### Step 1: Paste the Supervisor Prompt as Your First Message
 
-Open `supervisor_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field).
+Open `supervisor_prompt.txt` and copy its entire contents. Start a new conversation on https://genai.mil/ and paste it as your first message in the chat window (not into a system prompt field).
 
 ### Step 2: Provide the Employee's Statements
 
@@ -164,27 +164,35 @@ Paste the following into the same chat window:
 [e.g., NH Level III, NJ Level II, NK Level II]
 ```
 
-### Step 3: Answer the Concurrence Questions
+### Step 3: Answer the Questions About Scoring
 
-For each of the three factors, the LLM will ask:
-- Whether you concur, partially concur, or do not concur with the employee's self-assessment (and your reasons if you differ)
-- Any contributions the employee missed
+First you will be asked for the employee's Expected Overall Contribution Score (EOCS). This is required — the wording of the assessment depends on it.
+
+Then, for each of the three factors, you will be asked:
+- Which statement applies: Meeting expected contributions, Exceeding expected contributions, Partially meeting expected contributions, or Not meeting expected contributions
+- Any contributions the employee left out of their self-assessment
 - Any additional context about scope, scale, or impact
 
-The first sentence of each factor's output will be one of three exact approved concurrence phrases — selected based on your response — to align with CCAS format requirements. If a factor has limited evidence even after your input, the LLM will ask a targeted follow-up for that factor specifically. If you have nothing to add, it will produce a generic but positive summary aligned to the rated individual's level rather than fabricate accomplishments.
+The first sentence of each factor is the statement you picked, word for word, because the business rules require it to match the score you are recommending. If you pick Partially meeting or Not meeting for a factor, you will also be asked what documented feedback or evidence from during the year supports that — the rules require the written assessment to contain no surprises for the employee.
+
+If a factor has limited evidence even after your input, you will get one targeted follow-up question about that factor. If you have nothing to add, the result is a shorter summary written at the employee's level rather than invented accomplishments.
 
 ### Step 4: Review the Output
 
-The LLM generates a supervisory assessment organized by factor, opening each with the exact concurrence phrasing followed by missing contributions, a contribution summary mapped to factor descriptors and discriminators, and a quality-of-performance statement supporting a recommended PAQL **score range** (not a specific numeric score). Review for accuracy against the employee's actual performance before finalizing in CAS2Net. The tool assists but does not replace supervisory judgment.
+You get two blocks. The first is the assessment itself, in plain text with no formatting, ready to paste into CAS2Net. It is organized by factor, and each factor opens with the statement you picked, then covers any contributions the employee left out, then their contributions matched to the descriptors for their career path and level, and closes with one or two sentences on how the work aligns with DAF guidance and supports the recommended quality level.
+
+The second block is a short set of notes for you — character counts against the 4,000-character CAS2Net limit, any factor that was thin on evidence, any assumption that was made, and a flag if the Expected Overall Contribution Score was never provided. Delete this second block before pasting anything into CAS2Net.
+
+No numeric score is suggested anywhere. The statement you picked for each factor already carries that. Review everything for accuracy against the employee's actual performance before finalizing in CAS2Net. This tool assists but does not replace your judgment.
 
 ### Tips for Supervisor Assessments
 
 - **Use the employee's finalized self-assessment** — the assessment is only as strong as the input statements.
 - **Include the correct career path and level** — NK, NJ, and NH have different descriptor tables and score ranges.
-- **Be ready with your concurrence position** — for each factor, know whether you concur, partially concur, or do not concur with the employee's self-assessment and why.
+- **Be ready with your scoring position** — for each factor, know whether the employee is meeting, exceeding, partially meeting, or not meeting expected contributions, and have the employee's Expected OCS on hand.
 - **Note missing contributions** — if the employee left out important accomplishments, mention them so the LLM can include them.
-- **Expect a score range, not a number** — the LLM recommends an aligned PAQL range and identifies whether performance meets, exceeds, or falls short of level expectations. Final numeric scoring is your decision.
-- **Address low-evidence factors** — if the LLM flags a factor with limited evidence, add what you can. If you have nothing to add, the output will be a brief, positive summary at level rather than invented detail.
+- **Expect no score at all** — scoring is your decision and the pay pool's. The opening statement you pick for each factor is what communicates it.
+- **Address low-evidence factors** — if the LLM flags a factor with limited evidence, add what you can. If you have nothing to add, the output will be a shorter summary written at the employee's level rather than invented detail.
 - **Review discriminator alignment** — verify that the suggested discriminator mappings match your assessment of the employee's performance.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
 
@@ -192,11 +200,11 @@ The LLM generates a supervisory assessment organized by factor, opening each wit
 
 ## Assessment Format Reviewer
 
-Use this prompt to **review completed annual or midterm appraisal reports** for formatting compliance before submission. It checks supervisor concurrence statements, W-R-I format, report structure, scoring validation, and more. Supports multi-person PDFs.
+Use this prompt to **review completed annual or midterm appraisal reports** for formatting compliance before submission. It checks the supervisor's opening statements, W-R-I format, report structure, scoring validation, and more. Supports multi-person PDFs.
 
 ### Step 1: Paste the Prompt as Your First Message
 
-Open `assessment_review_prompt.txt` and copy its entire contents. Start a new conversation on chat.genai.army.mil and paste it as your first message in the chat window (not into a system prompt field).
+Open `assessment_review_prompt.txt` and copy its entire contents. Start a new conversation on https://genai.mil/ and paste it as your first message in the chat window (not into a system prompt field).
 
 ### Step 2: Upload or Paste the Report
 
@@ -220,7 +228,7 @@ The output uses no tables, so it can be downloaded as a .docx file without forma
 
 ### What It Checks
 
-1. **Supervisor Concurrence Statements** (CRITICAL) — must use one of three exact approved phrasings
+1. **Supervisor Lead-In Statements** (CRITICAL) — each factor must open with one of four exact approved statements
 2. **W-R-I Format Compliance** (CRITICAL) — no W-R-I = no pay raise/no award
 3. **Mandatory Supervisory Objective** (CRITICAL) — supervisors must state personnel counts in first WRI under Job Achievement
 4. **Report Structure Completeness** (CRITICAL/WARNING) — header fields, all three factors, scores present
@@ -234,7 +242,7 @@ The output uses no tables, so it can be downloaded as a .docx file without forma
 - **Upload the full PDF** — the reviewer handles multi-person reports and evaluates each person independently.
 - **Know your assessment type** — midterm and annual have different W-R-I minimums.
 - **Focus on CRITICAL findings first** — these block pay raise/award eligibility and must be corrected before submission.
-- **Use the exact concurrence phrasing** — the three approved statements are listed in the findings when flagged.
+- **Use the exact lead-in statement** — the four approved statements are listed in the findings when flagged.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
 
 ---
