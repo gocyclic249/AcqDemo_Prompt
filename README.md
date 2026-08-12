@@ -181,7 +181,7 @@ If a factor has limited evidence even after your input, you will get one targete
 
 You get two blocks. The first is the assessment itself, in plain text with no formatting, ready to paste into CAS2Net. It is organized by factor, and each factor opens with the statement you picked, then covers any contributions the employee left out, then their contributions matched to the descriptors for their career path and level, and closes with one or two sentences on how the work aligns with DAF guidance and supports the recommended quality level.
 
-The second block is a short set of notes for you — character counts against the 4,000-character CAS2Net limit, any factor that was thin on evidence, and any assumption that was made. Delete this second block before pasting anything into CAS2Net.
+The second block is a short set of notes for you — character counts against the 4,000-character CAS2Net limit, any factor that was thin on evidence, any assumption that was made, and a flag if the Expected Overall Contribution Score was never provided. Delete this second block before pasting anything into CAS2Net.
 
 No numeric score is suggested anywhere. The statement you picked for each factor already carries that. Review everything for accuracy against the employee's actual performance before finalizing in CAS2Net. This tool assists but does not replace your judgment.
 
@@ -242,7 +242,7 @@ The output uses no tables, so it can be downloaded as a .docx file without forma
 - **Upload the full PDF** — the reviewer handles multi-person reports and evaluates each person independently.
 - **Know your assessment type** — midterm and annual have different W-R-I minimums.
 - **Focus on CRITICAL findings first** — these block pay raise/award eligibility and must be corrected before submission.
-- **Use the exact concurrence phrasing** — the three approved statements are listed in the findings when flagged.
+- **Use the exact lead-in statement** — the four approved statements are listed in the findings when flagged.
 - **Do not include classified information** — ensure all inputs are appropriate for an unclassified environment.
 
 ---
