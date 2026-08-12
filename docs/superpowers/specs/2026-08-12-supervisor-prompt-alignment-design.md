@@ -165,9 +165,23 @@ Specific passages requiring change:
 - **Line 178** — describes the output as opening "with the exact concurrence phrasing" and ending with "a quality-of-performance statement supporting a recommended PAQL **score range** (not a specific numeric score)." Both halves are now wrong: the opening is a lead-in statement, and no score range is recommended. Rewrite to describe the three-part factor structure and the plain-text paste block with a separate notes block to delete first. This sentence also uses "LLM," which the audience rule in `CLAUDE.md` forbids — replace it while rewriting.
 - **Around lines 160–177** — the described intake questions become: the employee's EOCS, and per factor, which of the four lead-ins applies, unreported contributions, and (for the two below-EOCS lead-ins) the supporting documented feedback.
 - **Lines 195 and 223** — the review-prompt section says it "checks supervisor concurrence statements" and lists CHECK 1 as "Supervisor Concurrence Statements … one of three exact approved phrasings." Update both to the lead-in statements and the count of four.
-- **Line 16** — the settings table's model row reads "Claude 4.6 O," which is Claude-era and stale per `CLAUDE.md`. Update it to whatever `chat.genai.army.mil` currently presents; the exact model name will be supplied by the user rather than guessed. If the user does not supply it, leave the row unchanged and report it as outstanding rather than inventing a value.
+- **Line 15 — platform row.** `chat.genai.army.mil` becomes `https://genai.mil/`.
+- **Line 16 — model row.** Reads "Claude 4.6 O," which is Claude-era and stale per `CLAUDE.md`. Becomes **Gemini 3.1 Pro**, with a short parenthetical that Gemini 3.6 Flash also works if Pro is unavailable. Rationale in §5.1.
+- **Lines 26, 107, 153, 199** — the "start a new conversation on chat.genai.army.mil" instruction in each of the four prompt walkthroughs. Update the site in all four.
 
 Audience constraint unchanged: plain language for a reader who has never used a chat-based AI tool. No jargon such as "prompt," "token," "LLM," or "context window."
+
+### 5.1 Model recommendation rationale
+
+Available on `https://genai.mil/`: Gemini 3.6 Flash, Gemini 3.1 Pro, and older Pro versions. The README will recommend **Gemini 3.1 Pro**, with 3.6 Flash named as an acceptable fallback.
+
+Both Gemini failures confirmed in this repo's live testing on 2026-07-27 — running example clarifying questions verbatim as a script, and dropping user-provided figures to satisfy a competing word cap — are instruction-adherence failures on a long, multi-constraint prompt. `supervisor_prompt.txt` is the repo's longest prompt (~560 lines) and after this revision carries verbatim-phrase requirements, a hard 4,000-character limit, and conditional branching on the supervisor's lead-in choice. Pro tiers are the better fit for that workload; Flash tiers trade instruction adherence for latency and cost, neither of which constrains a task a supervisor performs a few times a year.
+
+Caveat, stated plainly because it affects how much weight to give the recommendation: 3.6 Flash is a newer model generation than 3.1 Pro, and the two have not been compared on these prompts. A newer Flash can outperform an older Pro. The recommendation is therefore provisional and settled empirically by the §6 verification tests — specifically the concurrence-language regression check and the supervisor-provided-figure retention check. If 3.6 Flash passes both cleanly, flip the README recommendation to it and record the result.
+
+### 5.2 `CLAUDE.md`
+
+`CLAUDE.md` names `chat.genai.army.mil` three times as the platform these prompts run on (lines 7, 29, and 30). All three become `https://genai.mil/`. Line 30's Claude-to-Gemini migration note stays — the guidance it carries is still live — but its statement that the README settings table "still list[s] a Claude model" becomes stale once §5 lands and is updated to reflect that the table now names a Gemini model.
 
 ## 6. Verification
 
@@ -175,8 +189,10 @@ There is no test tooling in this repo; verification is manual, in the terms `CLA
 
 1. **Cross-file phrase consistency.** Grep all four prompt files and the template for the retired concurrence phrases; the only surviving occurrences must be the non-compliant examples in `assessment_review_prompt.txt` CHECK 1. Grep for each of the four lead-ins; wording must match the guide and the template character for character.
 2. **Guide traceability.** Every new or changed rule cites the guide section it implements, and each citation is checked against `2026guide.pdf`.
-3. **Live check on `chat.genai.army.mil`.** Paste the revised prompt as the first message with a synthetic self-assessment containing no real employee data. Confirm: the intake asks for EOCS and a per-factor lead-in; each factor narrative opens with a verbatim lead-in; each closes with a DAF/PAQL sentence naming no invented citation; the output contains no Markdown and no numeric score; the notes block is separate and marked for deletion.
+3. **Live check on `https://genai.mil/`.** Paste the revised prompt as the first message with a synthetic self-assessment containing no real employee data. Confirm: the intake asks for EOCS and a per-factor lead-in; each factor narrative opens with a verbatim lead-in; each closes with a DAF/PAQL sentence naming no invented citation; the output contains no Markdown and no numeric score; the notes block is separate and marked for deletion.
 4. **Regression check on the retired behavior.** Answer the intake in concurrence language ("I concur") and confirm the model asks which lead-in applies rather than emitting a concurrence sentence.
+5. **Figure-retention check.** Supply a supervisor contribution containing a specific figure and confirm it survives into the narrative rather than being replaced by generic phrasing under the 4,000-character constraint.
+6. **Model comparison.** Run tests 3–5 on Gemini 3.1 Pro and on Gemini 3.6 Flash. If Flash passes all three cleanly, update the README recommendation to Flash and record the result; otherwise leave the Pro recommendation in place (§5.1).
 
 ## 7. Remaining Divergence After This Change
 
@@ -186,4 +202,4 @@ Of the three items in `2026-07-14-assessment-package-template-design.md` §6:
 - `contribution_plan_prompt.txt` labeled-contribution alignment (Attachment C) — **still open**, held for SME input.
 - `wri_prompt.txt` label form — **already resolved**; the file uses the abbreviated `(W)`/`(R)`/`(I)` labels the SME preferred, matching the template.
 
-Closeout supervisory assessments (guide 7.4) are covered by no prompt and no template section. Noted, not addressed here.
+Closeout supervisory assessments (guide 7.4) are covered by no prompt and no template section. Raised during this design and **deliberately deferred** — not part of this work.
