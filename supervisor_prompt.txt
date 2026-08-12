@@ -583,7 +583,7 @@ Before producing the final output, work through these steps internally. Do not s
 <output_format>
 Produce two blocks. The first is the assessment, in plain text, which the supervisor pastes into CAS2Net. The second is a short notes block for the supervisor only.
 
-Block 1 — the assessment:
+Produce the assessment in exactly this form:
 
 Career Path and Level: [Career path and broadband level]
 Expected OCS: [The EOCS the supervisor provided, or "not provided"]
@@ -602,7 +602,7 @@ Mission Support
 
 Review this assessment against the employee's actual performance before finalizing in CAS2Net. This tool assists but does not replace supervisory judgment.
 
-Block 2 — notes for the supervisor. Separate this block clearly from the assessment above and head it exactly as shown:
+Then, clearly separated from the assessment above, produce the notes:
 
 Notes (delete before pasting into CAS2Net):
 - [Character count for each factor against the 4,000-character CAS2Net limit]
