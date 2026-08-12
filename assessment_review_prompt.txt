@@ -26,22 +26,25 @@ Apply the correct minimum throughout your evaluation. Do not proceed with the re
 
 **Evaluation Checklist:**
 
-**CHECK 1: Supervisor Concurrence Statements**
+**CHECK 1: Supervisor Lead-In Statements**
 Priority: CRITICAL
-Each supervisor assessment block (one per factor) MUST open with one of exactly three approved concurrence statements:
+Each supervisor assessment block (one per factor) MUST begin with one of exactly four approved lead-in statements. The lead-in must equal the recommended numerical score for that factor (2026 AcqDemo business rules, 7.5.4):
 
-1. "I concur with the employee's self-assessment"
-2. "I partially concur with the employee's self-assessment" — followed by stated reasons for the difference
-3. "I do not concur with the employee's self-assessment" — followed by stated reasons
+1. "Meeting expected contributions" — the employee is scoring at their EOCS for the factor
+2. "Exceeding expected contributions" — the employee is scoring above their EOCS for the factor
+3. "Partially meeting expected contributions" — the employee is scoring below their EOCS for the factor
+4. "Not meeting expected contributions" — the employee is scoring below their EOCS for the factor
 
-Flag as CRITICAL any variation, paraphrase, or deviation from these three exact statements. Common non-compliant examples include:
+One exception applies (9.1.4): when coding a "Very High" score required scoring one or two factors below the EOCS, the lead-in for those factors reads "meeting or exceeding expected contributions."
+
+Flag as CRITICAL any variation, paraphrase, or deviation from these lead-in statements. Common non-compliant examples include:
+- "I concur with the employee's self-assessment" — along with "I partially concur with the employee's self-assessment" and "I do not concur with the employee's self-assessment." These were the approved openers in prior cycles and are now retired. Expect this to be the most common finding this cycle.
 - "I agree with the annual assessment"
 - "I fully concur with the annual assessment of [name]'s performance"
-- "I concur with the annual assessment"
-- Any phrasing that substitutes "annual assessment" for "employee's self-assessment"
-- Any phrasing that adds qualifiers like "fully" or "strongly"
+- Any phrasing that adds a qualifier such as "fully," "strongly," "clearly," or "overall"
+- A narrative that opens with substantive content and places the lead-in statement later
 
-For partial or non-concurrence, verify that the supervisor states specific reasons.
+For "Partially meeting expected contributions" and "Not meeting expected contributions," verify the narrative clearly describes the inadequate contributions or unmet performance expectations (7.5.4.3).
 
 ---
 
@@ -80,7 +83,7 @@ If the employee holds a supervisory position:
 - The FIRST W-R-I statement under **Job Achievement and/or Innovation** must address the mandatory supervisory objective.
 - This statement must include the number of military personnel supervised, civilians supervised, and contractors managed.
   Example: "I supervise 0 military, 11 Civilians, and manage 2 contractors."
-- This mandatory objective does NOT count toward the 2 required W-R-I statements per factor (so a supervisor needs the mandatory objective PLUS 2 additional W-R-I statements under Job Achievement).
+- This mandatory objective does NOT count toward the 3 required W-R-I statements per factor (so a supervisor needs the mandatory objective PLUS 3 additional W-R-I statements under Job Achievement). The 2-per-factor figure applies only to first-year organizations for the current cycle.
 
 If it is unclear whether the employee is a supervisor, flag as INFO and recommend verifying.
 
@@ -125,10 +128,10 @@ Priority: WARNING for missing elements
 
 Per CCAS guidance, each supervisor factor assessment must include four elements:
 
-1. **Concurrence statement** — Opening line using one of the three approved statements (see Check 1).
-2. **Missing contributions** — Any important contributions the employee omitted from their self-assessment. If the supervisor added contributions, verify they are clearly identified. If none were missing, the supervisor should still acknowledge the completeness of the employee's self-assessment.
-3. **Summary of contributions** — Contributions mapped to factor descriptors and discriminators, characterizing the resulting impact to mission to support the recommended numerical scores. Should use factor descriptor and discriminator language from the employee's career path and broadband level.
-4. **Quality of performance statement** — A statement supporting the recommended score range, addressing how the employee's performance relates to expected contribution criteria.
+1. **Lead-in statement** — Opening line using one of the four approved lead-in statements (see Check 1).
+2. **Missing contributions** — Contributions the employee omitted from their self-assessment. For a factor marked "Meeting expected contributions," the narrative must include contributions the employee did not report; for "Exceeding expected contributions," it must include the significant ones (7.5.4.1 and 7.5.4.2).
+3. **Summary of contributions** — Contributions mapped to factor descriptors and discriminators, characterizing the resulting impact to mission. Should use factor descriptor and discriminator language from the employee's career path and broadband level.
+4. **DAF guidance alignment statement** — One to two sentences addressing how the employee's contributions align with DAF guidance and support the recommended PAQL score (7.5.5).
 
 Additionally check for:
 5. **CRI vs. CA differentiation** — The supervisor should highlight which contributions are normal/recurring operations (supporting CRI — Contribution Rating Increase) versus one-time or not-always-performed contributions (supporting CA — Contribution Award plus-up).
@@ -169,6 +172,14 @@ NH (Business Management and Technical Management):
 - Very High: 105, 110, or 115
 
 If any numeric score falls outside the valid range for the stated level, flag as CRITICAL.
+
+Very High eligibility (9.1.2): a "Very High" categorical rating or its associated scores may only be awarded to employees whose Expected OCS falls within the band for their career path:
+- NH: EOCS 96–100
+- NJ: EOCS 79–83
+- NK: EOCS 57–61
+
+If a Very High score appears and the Expected OCS falls outside that band, flag as CRITICAL. When Very High is assigned, verify the narrative states specifically how the employee exceeds the top of the broadband for that factor.
+
 If Very High scores are assigned, verify the supervisor narrative explicitly addresses Very High criteria:
 - Outcomes far superior in quality, quantity, timeliness, and impact
 - Overcame obstacles with extra effort
@@ -257,7 +268,7 @@ List each CRITICAL finding as a numbered item with:
 - Check number (e.g., Check 1)
 - Location in the report (e.g., "Supervisor Assessment, Job Achievement")
 - What is wrong
-- The exact fix needed (for concurrence statements, provide the correct phrasing to use)
+- The exact fix needed (for lead-in statements, provide the correct phrasing to use)
 
 If no CRITICAL findings exist, state: "No critical findings."
 
