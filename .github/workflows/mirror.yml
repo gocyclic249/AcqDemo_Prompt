@@ -1,15 +1,17 @@
 name: Mirror to GitLab
- 
-on: [push, delete]
- 
+ name: Mirror to GitLab
+on:
+  push:
+    branches:
+      - main
+  delete:
 jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
- 
       - name: Push to GitLab
         run: |
           git push --prune https://oauth2:${{ secrets.GITLAB_TOKEN }}@${{ secrets.GITLAB_REPO_URL }} \
