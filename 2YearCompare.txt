@@ -117,27 +117,34 @@ scores — that is one condition, not four.
 
 ## 3. W-R-I tagging — strict
 
-3.1. Every W-R-I statement must use exactly these three markers, in this order:
+3.1. Every W-R-I statement must label its three parts, in W → R → I order, with one of
+these five accepted marker sets (SME directive). All three markers in one statement must
+come from the same set; different statements may use different sets:
 
 ```
-(W):
-(R):
-(I):
+1.  (W):      (R):        (I):
+2.  (What)    (Result)    (Impact)
+3.  What      Result      Impact
+4.  (What):   (Result):   (Impact):
+5.  What:     Result:     Impact:
 ```
+
+A statement that mixes sets — for example `(W):` then `Result:` — is an error.
+Finding: `<Factor> W-R-I #<n> mixes marker sets ("<W marker>" with "<other marker>"); use one set per statement (SME directive).`
 
 3.2. **Flag any other opening.** Examples that are errors, not acceptable variants:
 `(W) What I did:` · `(W) What I am doing:` · `(R) Result:` · `(I) Impact:` ·
-`W:` · `What:` · `(W)` with no colon · `W-` · `(1)` · bolded or spelled-out headings.
+`W:` · `(W)` with no colon · `W-` · `(1)` · bolded headings.
 
-Finding: `<Factor> W-R-I #<n> uses "<found marker>"; required marker is "(W):" (BR 7.5.1).`
+Finding: `<Factor> W-R-I #<n> uses "<found marker>"; marker is not in any accepted set (SME directive).`
 Report one finding per statement, not one per marker — list the wrong markers inside it.
 
 3.3. **No other headings inside the self-assessment.** Unless
 `ALLOW_ACCOMPLISHMENT_TITLES = true`, flag any label, title, heading, or section marker
-appearing in the self-assessment other than the factor names and the three W-R-I markers.
+appearing in the self-assessment other than the factor names and the accepted W-R-I markers.
 This includes `Accomplishment 1: <title>` labels.
 
-Finding: `<Factor> contains non-permitted heading "<text, 8 words max>"; only (W): (R): (I): markers are permitted.`
+Finding: `<Factor> contains non-permitted heading "<text, 8 words max>"; only factor names and W-R-I markers are permitted.`
 
 If `ALLOW_ACCOMPLISHMENT_TITLES = true`, accept `Accomplishment <n>: <title>` lines silently
 and continue applying 3.1 and 3.2 to everything else.
@@ -347,7 +354,7 @@ guessing: `Unable to verify <element> — text appears truncated at page break.`
 
 1. Every employee in the CURRENT file has a block; none skipped or merged.
 2. No formatting or regulatory finding was reported against a prior-year record.
-3. Every W-R-I marker other than exactly `(W):` `(R):` `(I):` was flagged.
+3. Every W-R-I marker outside the accepted sets in 3.1 was flagged, and every statement mixing sets was flagged.
 4. Non-permitted headings were flagged, unless `ALLOW_ACCOMPLISHMENT_TITLES = true`.
 5. Every duplication finding names both sides — factor and number, plus year where relevant.
 6. Every regulatory finding carries a BR citation.
