@@ -1,0 +1,191 @@
+# Answer Key — CCAS Checker Test Fixture
+
+**Files:** `TEST_CCAS_FY2026.pdf` (20 employees, under review) and `TEST_CCAS_FY2025.pdf`
+(11 employees, reference only).
+
+All names, supervisors, projects, and narratives are synthetic. No CUI.
+
+**Assumed settings:** `MINIMUM_WRI_PER_FACTOR = 3`, `ALLOW_ACCOMPLISHMENT_TITLES = false`,
+`CHECK_SUPERVISOR_COPY_PASTE = true`.
+
+---
+
+## Roster truth
+
+| | Count |
+|---|---|
+| Employees in FY2026 | 20 |
+| Employees in FY2025 | 11 |
+| Matched both years | 9 |
+| Name variant (should be flagged, not merged) | 1 — Quebec |
+| 2026 only | 10 |
+| 2025 only (prior-only, not reviewed) | 1 — Whiskey, Henry L |
+
+**Matched both years:** Snuffy, Charlie, Delta, Echo, Foxtrot, Hotel, Kilo, Lima, Mike
+**2026 only:** Bravo, Golf, India, Juliett, November, Oscar, Papa, Romeo, Sierra, Tango
+**Name variant:** `Quebec, Joseph D` (2026) vs `Quebec, Joe D` (2025)
+
+---
+
+## Seeded defects by employee (FY2026)
+
+### 01. Snuffy, Joe M — **CLEAN CONTROL**
+Expect **no findings in any section.** Strict markers, 3 statements per factor, no titles,
+valid lead-ins, PAQL sentences present. Mission Support uses "Exceeding expected
+contributions" with a score of 72 against an EOCS of 68 — that is *consistent*, not a
+finding. Any finding here is a false positive.
+
+### 02. Bravo, Alice K
+- All 9 statements use `(W) What I did:` / `(R) Result:` / `(I) Impact:` → **wrong markers, 9 statements**
+- All 9 statements carry `Accomplishment:` title lines → **non-permitted headings, 9 instances**
+
+### 03. Charlie, Robert T
+- Communication and/or Teamwork has only **2** W-R-I statements → count violation
+- Job Achievement statement #2 is **missing the (I) component**
+
+### 04. Delta, Maria L
+- **Mission Support #1 is identical to Job Achievement #3** (cross-factor duplication)
+
+### 05. Echo, David P
+- **Job Achievement #1 is identical to the 2025 Job Achievement #1** (exact, year over year)
+- **Communication #2 is identical to the 2025 Communication #2** (exact, year over year)
+
+### 06. Foxtrot, Susan R
+Contribution plan contains a Supervisory Objective.
+- Supervisory statement is **written in W-R-I format** (must be a paragraph)
+- Supervisory statement **appears after** the three W-R-I statements (must be first)
+
+### 07. Golf, Thomas W
+Contribution plan contains a Supervisory Objective.
+- **Supervisory Objective is entirely absent** from Job Achievement and/or Innovation
+
+### 08. Hotel, Karen J
+- Job Achievement supervisor lead-in reads "Met expectations" → **non-standard wording**
+- Communication supervisor narrative has **no lead-in at all**
+- Mission Support supervisor lead-in reads "Outstanding performance" → **non-standard wording**
+
+### 09. India, Michael S
+- Valid lead-in present but **buried mid-paragraph** in all three factors (3 findings)
+- **PAQL/DAF-guidance sentence missing** from all three factors (3 findings)
+
+### 10. Juliett, Nancy A
+Contribution plan contains an Acquisition Coded Position Objective.
+- **Acquisition self-certification statement missing** from Mission Support
+- **Supervisor narrative for Communication is written in W-R-I format**
+
+### 11. Kilo, Peter G
+- Job Achievement #1 is **near-identical to the 2025 Job Achievement #1** — differs only in
+  fiscal year, counts (212→227, 14→16), and accuracy figure (97→98). Should be reported as
+  *near-identical*, not exact.
+- **PASS case:** acquisition self-certification statement is correctly present in Mission
+  Support, in paragraph form. Flagging it is a false positive.
+
+### 12. Lima, Rachel D
+- **Job Achievement #3 is identical to Job Achievement #1** (within-factor duplication)
+- **Communication #1 (W) reproduces Contribution Plan Objective 1 verbatim**
+
+### 13. Mike, Steven C — supervisor, Sup 1: PATTON, GEORGE S
+- **PASS case:** Supervisory Objective is correctly formatted — paragraph, counts stated,
+  placed before the W-R-I statements, not counted toward the three. Flagging it is a false positive.
+- **Supervisor narrative for Communication is identical to the narrative for Mission Support**
+  (within-employee supervisor reuse)
+
+### 14. November, Olivia F — Sup 1: PATTON, GEORGE S
+- **Mission Support supervisor narrative is identical to Mike, Steven C's Mission Support
+  narrative** — same Supervisor 1. Belongs in the cross-employee section, not the employee block.
+- Job Achievement lead-in is "Exceeding expected contributions" but the score is **68 against
+  an EOCS of 68** → direction mismatch
+
+### 15. Oscar, Brian H — EOCS 98, Broadband IV
+- Job Achievement categorical score is **"Very High" (110) with no narrative justification**
+  addressing exceeding the top of the broadband
+- Job Achievement contribution plan has **only 1 objective** (minimum is 2)
+- 2026 only — no prior-year record, so year-over-year check cannot run
+
+### 16. Papa, Linda M
+- **Supervisor assessment not entered** — all categorical, numeric, and PAQL cells read NONE
+  and there is no narrative. Expect **one consolidated informational line**, not a cascade of
+  separate lead-in / PAQL-sentence / missing-score findings. Employee side is clean.
+
+### 17. Quebec, Joseph D
+- Employee side and supervisor side are **clean**
+- Appears in 2025 as **"Quebec, Joe D"** → expect a name-variant note in the roster table,
+  and the two records should **not** be silently merged
+
+### 18. Romeo, Angela — **Midpoint**
+- **Scores are present on a midpoint record** (midpoints carry no scores)
+- Two statements per factor is **correct for a midpoint** — flagging the count is a false positive
+- Supervisor lead-in checks do not apply — flagging them is a false positive
+
+### 19. Sierra, Frank N — **Closeout**
+- **Scores are present on a closeout record** (closeouts carry no scores)
+- Count and lead-in checks do not apply
+
+### 20. Tango, Grace E
+- Administrative note says the employee entered AcqDemo 5 Aug 2026 with under 90 days and is
+  **not rated**, but a **full annual self-assessment and full scores are present** → structural
+  contradiction
+
+---
+
+## False-positive traps in the FY2025 file
+
+None of these may appear as findings. Reporting any of them means the model is checking the
+prior-year file, which it must not do.
+
+| Employee (2025) | Trap |
+|---|---|
+| Snuffy, Joe M | Descriptive `(W) What I did:` markers **and** Accomplishment title lines |
+| Snuffy, Joe M | Supervisor lead-in "Met expectations" (non-standard) |
+| Charlie, Robert T | Only 2 W-R-I statements per factor |
+| Charlie, Robert T | No supervisor lead-in in any factor |
+
+---
+
+## Scoring sheet
+
+33 discrete test cases. Mark each hit / miss / false positive.
+
+| # | Test case | Employee | Type |
+|---|---|---|---|
+| 1 | Clean record produces no findings | Snuffy | No-finding |
+| 2 | Wrong W-R-I markers detected | Bravo | Format |
+| 3 | Non-permitted headings detected | Bravo | Format |
+| 4 | Fewer than 3 statements in a factor | Charlie | Regulatory |
+| 5 | Missing (I) component | Charlie | Format |
+| 6 | Cross-factor duplicate | Delta | Duplication |
+| 7 | Year-over-year exact duplicate (×2) | Echo | Duplication |
+| 8 | Supervisory Objective in W-R-I format | Foxtrot | Regulatory |
+| 9 | Supervisory Objective after W-R-I | Foxtrot | Regulatory |
+| 10 | Supervisory Objective missing | Golf | Regulatory |
+| 11 | Non-standard lead-in wording (×2) | Hotel | Regulatory |
+| 12 | Lead-in entirely missing | Hotel | Regulatory |
+| 13 | Lead-in not at start (×3) | India | Regulatory |
+| 14 | PAQL/DAF sentence missing (×3) | India | Regulatory |
+| 15 | Acquisition self-certification missing | Juliett | Regulatory |
+| 16 | Supervisor narrative in W-R-I | Juliett | Format |
+| 17 | Year-over-year near-identical | Kilo | Duplication |
+| 18 | Within-factor duplicate | Lima | Duplication |
+| 19 | Objective text reused as (W) | Lima | Duplication |
+| 20 | Supervisor narrative reused across factors | Mike | Duplication |
+| 21 | Supervisor narrative reused across employees | Mike / November | Cross-employee |
+| 22 | Lead-in vs score direction mismatch | November | Regulatory |
+| 23 | Very High Score without justification | Oscar | Regulatory |
+| 24 | Fewer than 2 plan objectives | Oscar | Regulatory |
+| 25 | Supervisor assessment not entered, consolidated | Papa | Informational |
+| 26 | Name variant flagged, not merged | Quebec | Roster |
+| 27 | Scores present on a midpoint | Romeo | Regulatory |
+| 28 | Scores present on a closeout | Sierra | Regulatory |
+| 29 | Not-rated note with full annual present | Tango | Regulatory |
+| 30 | Prior-only employee identified | Whiskey | Roster |
+| 31 | No findings raised against the 2025 file | — | No-finding |
+| 32 | Correct acquisition self-certification not flagged | Kilo | No-finding |
+| 33 | Correct Supervisory Objective not flagged | Mike | No-finding |
+
+**Interpreting results.** Cases 1, 31, 32, and 33 are the ones that matter most. A model
+that flags everything will score well on recall and be useless in practice — supervisors
+stop reading a report that cries wolf. Track false positives at least as carefully as misses.
+
+Cases 13, 14, 22, and 25 are the hardest. Mid-paragraph lead-in detection and score-direction
+consistency both require the model to hold two facts at once; the "not yet entered" case
+requires it to *suppress* three findings it would otherwise generate.
