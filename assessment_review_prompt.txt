@@ -81,13 +81,17 @@ Requirements:
 
 **Required element markers (SME directive):**
 
-Each element must be labeled with exactly these three markers, and no others:
+Each statement must be labeled with one of these five accepted marker sets, and no others:
 
-- `(W):`
-- `(R):`
-- `(I):`
+1. `(W):` · `(R):` · `(I):`
+2. `(What)` · `(Result)` · `(Impact)`
+3. `What` · `Result` · `Impact`
+4. `(What):` · `(Result):` · `(Impact):`
+5. `What:` · `Result:` · `Impact:`
 
-Flag as CRITICAL any other marker style, including descriptive variants such as `(W) What I did:`, `(R) Result:`, `(I) Impact:`, or `What:` / `Result:` / `Impact:` without the parenthesized letter. Report each non-compliant statement. The fix is to replace the marker with the bare `(W):`, `(R):`, or `(I):` form, leaving the narrative text unchanged.
+All three markers in one statement must come from the same set. Flag as WARNING a statement that mixes sets — for example `(W):` followed by `Result:`. The fix is to change the odd markers to match the set of its `W` marker. Different statements may use different sets; do not flag that.
+
+Flag as CRITICAL any other marker style, including descriptive variants such as `(W) What I did:`, `(W) What I am doing:`, `(R) Result:`, `(I) Impact:`, a bare letter such as `W:` or `W-`, `(W)` without a colon, or a number such as `(1)`. Report each non-compliant statement. The fix is to replace the marker with an accepted form — `(W):`, `(R):`, or `(I):` is preferred — leaving the narrative text unchanged.
 
 **No title or heading lines (SME directive):**
 
