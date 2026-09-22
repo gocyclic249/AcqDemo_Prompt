@@ -328,12 +328,30 @@ Follow Steps A through C in "Before You Start" above, using `assessment_review_p
 
 Upload the PDF of the appraisal report — one person or many — or paste the text into the chat.
 
-### Step 3: Say whether it is midterm or annual
+**If your file is longer than 25 pages, you must split it first.** The website will not accept a PDF larger than that, and — this is the important part — it does not warn you. It simply reads the first 25 pages and reviews only the people it found there. Everyone after that is silently left out.
 
-The assistant will ask. This sets the minimum number of W-R-I statements per factor:
+Each person's record runs about three pages, so 25 pages holds roughly seven to nine people. A 60-page file covering 20 people needs to be split into three parts.
+
+**How to split it, and where to cut:**
+
+Cut **between** people, never in the middle of someone's record. Every record starts on a page reading "Annual Appraisal Assessment for [name]" — make each part begin on one of those pages. If you cut someone's record in half, both halves look incomplete and you will get made-up problems reported against that person in both parts.
+
+To split a PDF, open it in Adobe Acrobat and use Organize Pages → Split, or ask your IT support. Name the parts clearly, for example `Review_Part1of3.pdf`.
+
+Then run the review once per part, in a **new chat each time**, pasting the instruction file again at the start.
+
+### Step 3: Answer the two questions
+
+The assistant will ask you two things before it starts.
+
+**First, is this midterm or annual?** This sets the minimum number of W-R-I statements per factor:
 
 - **Midterm:** at least 1 per factor
 - **Annual:** at least 3 per factor
+
+**Second, is this the whole file or one part of a split file?** If you split it in Step 2, say which part this is — for example, "part 2 of 3." This matters for the spreadsheet: the assistant includes the column-name row only on part 1, so parts 2 and 3 paste straight underneath without repeating the headings.
+
+The assistant will then tell you how many people it found in the file and list their names. **Check that list.** If someone is missing, the split lost them and you should fix the split before going further.
 
 ### Step 4: Work through the findings
 
@@ -367,7 +385,16 @@ Two of the columns hold the review results, split so each person knows what is t
 - **Notes** — problems in the part the *employee* wrote (their W-R-I statements, the header block, the contribution plan)
 - **Supr Inputs** — problems in the part the *supervisor* wrote (the opening statements, the narratives, the scores)
 
-If a person has nothing wrong on one side, that column simply reads "No findings."
+If a person has nothing wrong on one side, that column simply reads "No findings." That is a normal, good result — it means that half of their appraisal is compliant. A clean record reads "No findings." in both columns.
+
+**If you split the file, combine the parts like this:**
+
+1. Do part 1 first. Copy its block, save it as a .csv, and open it in Excel.
+2. For part 2, copy its block and paste it at the bottom of the same sheet, underneath the last row. It will not have a column-name row, so it lines up directly.
+3. Repeat for any further parts.
+4. When you are done, count the rows. They should add up to the total number of people across all your parts.
+
+**You may also see a short list under "Observations across all records."** These are problems that applied to nearly everyone — for example, no supervisor narrative distinguishing recurring work from one-time work. They are deliberately kept out of the spreadsheet rows, because a warning repeated against all 20 names makes the column useless to read. Treat them as a note to the organization rather than to any one person.
 
 **Four columns come back empty on purpose: Symbol, Sub-Panel, Sub-Panel Manager, and UCI.** That information is not printed anywhere in an appraisal report, so the assistant has no way to know it and is specifically told not to guess. Fill those four columns in yourself once the file is open in Excel.
 
