@@ -328,12 +328,30 @@ Follow Steps A through C in "Before You Start" above, using `assessment_review_p
 
 Upload the PDF of the appraisal report — one person or many — or paste the text into the chat.
 
-### Step 3: Say whether it is midterm or annual
+**If your file is longer than 25 pages, you must split it first.** The website will not accept a PDF larger than that, and — this is the important part — it does not warn you. It simply reads the first 25 pages and reviews only the people it found there. Everyone after that is silently left out.
 
-The assistant will ask. This sets the minimum number of W-R-I statements per factor:
+Each person's record runs about three pages, so 25 pages holds roughly seven to nine people. A 60-page file covering 20 people needs to be split into three parts.
+
+**How to split it, and where to cut:**
+
+Cut **between** people, never in the middle of someone's record. Every record starts on a page reading "Annual Appraisal Assessment for [name]" — make each part begin on one of those pages. If you cut someone's record in half, both halves look incomplete and you will get made-up problems reported against that person in both parts.
+
+To split a PDF, open it in Adobe Acrobat and use Organize Pages → Split, or ask your IT support. Name the parts clearly, for example `Review_Part1of3.pdf`.
+
+Then run the review once per part, in a **new chat each time**, pasting the instruction file again at the start.
+
+### Step 3: Answer the two questions
+
+The assistant will ask you two things before it starts.
+
+**First, is this midterm or annual?** This sets the minimum number of W-R-I statements per factor:
 
 - **Midterm:** at least 1 per factor
 - **Annual:** at least 3 per factor
+
+**Second, is this the whole file or one part of a split file?** If you split it in Step 2, say which part this is — for example, "part 2 of 3." This matters for the spreadsheet: the assistant includes the column-name row only on part 1, so parts 2 and 3 paste straight underneath without repeating the headings.
+
+The assistant will then tell you how many people it found in the file and list their names. **Check that list.** If someone is missing, the split lost them and you should fix the split before going further.
 
 ### Step 4: Work through the findings
 
@@ -345,6 +363,40 @@ You get a findings report for each person in the file, containing:
 - **Detailed Findings** — CRITICAL items must be fixed before submission, WARNINGS should be addressed, INFO items are optional improvements
 
 The report deliberately contains no tables, so you can save it as a .docx without the formatting breaking.
+
+### Step 5: Save the spreadsheet summary
+
+After the written findings for everyone in the file, you get one last block of text — a summary with one line per person, ready for Excel. It looks like this, with everything separated by commas:
+
+```
+"Employee Name","Symbol","Series","Supervisor 1","Sub-Panel","Sub-Panel Manager","UCI","Notes","Supr Inputs"
+"Snuffy, Joe M","","1170","SMITH, JOE D","","","","No findings.","No findings."
+```
+
+To turn it into a spreadsheet:
+
+1. Copy the whole block of text, including the first line with the column names.
+2. Open Notepad (or any plain text editor) and paste it in.
+3. Save the file with a name ending in **.csv** — for example, `panel_review.csv`. In Notepad's Save dialog, set "Save as type" to **All Files** first, or it will add `.txt` to the end.
+4. Double-click the saved file. It opens in Excel with each piece of information in its own column.
+
+Two of the columns hold the review results, split so each person knows what is theirs to fix:
+
+- **Notes** — problems in the part the *employee* wrote (their W-R-I statements, the header block, the contribution plan)
+- **Supr Inputs** — problems in the part the *supervisor* wrote (the opening statements, the narratives, the scores)
+
+If a person has nothing wrong on one side, that column simply reads "No findings." That is a normal, good result — it means that half of their appraisal is compliant. A clean record reads "No findings." in both columns.
+
+**If you split the file, combine the parts like this:**
+
+1. Do part 1 first. Copy its block, save it as a .csv, and open it in Excel.
+2. For part 2, copy its block and paste it at the bottom of the same sheet, underneath the last row. It will not have a column-name row, so it lines up directly.
+3. Repeat for any further parts.
+4. When you are done, count the rows. They should add up to the total number of people across all your parts.
+
+**You may also see a short list under "Observations across all records."** These are problems that applied to nearly everyone — for example, no supervisor narrative distinguishing recurring work from one-time work. They are deliberately kept out of the spreadsheet rows, because a warning repeated against all 20 names makes the column useless to read. Treat them as a note to the organization rather than to any one person.
+
+**Four columns come back empty on purpose: Symbol, Sub-Panel, Sub-Panel Manager, and UCI.** That information is not printed anywhere in an appraisal report, so the assistant has no way to know it and is specifically told not to guess. Fill those four columns in yourself once the file is open in Excel.
 
 ### What It Checks
 
@@ -363,6 +415,7 @@ The report deliberately contains no tables, so you can save it as a .docx withou
 - **Know whether it is midterm or annual.** The W-R-I minimums differ.
 - **Fix the CRITICAL findings first.** Those block pay raise and award eligibility.
 - **Use the exact opening statement.** When one is flagged, the four approved statements are listed in the finding.
+- **Check the spreadsheet against your roster.** The assistant fills in only what the report actually prints — name, series, and the first supervisor. Symbol, Sub-Panel, Sub-Panel Manager, and UCI are left blank for you.
 - **Do not include classified information.**
 
 ---
