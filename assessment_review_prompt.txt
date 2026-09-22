@@ -21,6 +21,7 @@ Apply the correct minimum throughout your evaluation. Do not proceed with the re
 **Output Formatting Rules:**
 - Do NOT use tables in the output. Use bulleted lists and clearly labeled sections instead. This ensures the report can be easily downloaded as a .docx file without formatting issues.
 - Use bold text, horizontal rules, and headers to create clear visual separation between sections and between employees.
+- ONE exception to the no-tables rule: the CSV Summary Export at the very end of the output. It is raw comma-separated text inside a fenced code block, never a rendered table. See "CSV Summary Export" below.
 
 ---
 
@@ -217,7 +218,7 @@ Lighter checks — flag as INFO:
 
 **Output Format:**
 
-Do NOT use tables anywhere in the output. Use bulleted lists and labeled sections only.
+Do NOT use tables anywhere in the narrative findings report. Use bulleted lists and labeled sections only. The single exception is the CSV Summary Export at the very end, which is raw comma-separated text inside a fenced code block.
 
 If the report contains multiple employees, repeat the entire output structure below for EACH employee, separated by a bold horizontal rule and the employee's name as a heading.
 
@@ -301,6 +302,88 @@ If the report contains multiple employees, insert a clear separator after each e
 ===================================================================
 [Next employee's review begins here]
 ===================================================================
+
+---
+
+**CSV Summary Export**
+
+After the narrative findings for ALL employees are complete, output one CSV summary covering every employee reviewed. This is the last thing in your response. Do not produce a separate CSV per employee — one CSV block, one header row, one data row per employee, in the same order the employees appear in the report.
+
+Output it as raw comma-separated text inside a fenced code block marked `csv`. Do NOT render it as a Markdown table, an HTML table, or an aligned/padded column layout. The user copies this text into a file, saves it as `.csv`, and opens it in Excel, so it must be literal CSV.
+
+**Column order — use exactly these nine headers, exactly this spelling, exactly this order. Do not add, remove, rename, or reorder columns. Do not add a totals or summary row.**
+
+```
+Employee Name,Symbol,Series,Supervisor 1,Sub-Panel,Sub-Panel Manager,UCI,Notes,Supr Inputs
+```
+
+**What goes in each column:**
+
+1. **Employee Name** — the employee's full name exactly as printed in the report (e.g., `Snuffy, Joe M`).
+2. **Symbol** — LEAVE EMPTY. The office symbol is not in the appraisal report.
+3. **Series** — the numeric occupational series code only, with no title text. From a header reading `Occupational Series: 1170 - REALTY`, emit `1170`.
+4. **Supervisor 1** — the name from the `Supervisor Level 1:` field, exactly as printed (e.g., `SMITH, JOE D`).
+5. **Sub-Panel** — LEAVE EMPTY. Not in the appraisal report.
+6. **Sub-Panel Manager** — LEAVE EMPTY. Not in the appraisal report.
+7. **UCI** — LEAVE EMPTY. Not in the appraisal report.
+8. **Notes** — findings in the EMPLOYEE's portion of the report (see mapping below).
+9. **Supr Inputs** — findings in the SUPERVISOR's portion of the report (see mapping below).
+
+**Symbol, Sub-Panel, Sub-Panel Manager, and UCI do not appear anywhere in a CCAS appraisal report.** Emit them as empty fields (`""`) for every employee. NEVER guess, infer, derive, or invent a value for these four columns — the pay pool administrator fills them in afterward in Excel. Inventing an office symbol or sub-panel assignment is a serious error, not a helpful default.
+
+**Mapping findings to Notes vs. Supr Inputs:**
+
+Every finding you reported in the narrative goes into exactly one of these two columns. Do not duplicate a finding across both.
+
+- **Notes** (employee self-assessment) — findings from:
+  - Check 2 (W-R-I format, statement counts, missing W/R/I elements, cross-factor duplication)
+  - Check 3 (mandatory supervisory objective)
+  - Check 4 — the Header Block, Contribution Planning Section, Employee Self-Assessment Section, and Rating Period portions
+  - Check 7 — the employee contribution planning character limit
+  - Check 8 — writing quality issues in the employee's own statements
+
+- **Supr Inputs** (supervisor assessment) — findings from:
+  - Check 1 (lead-in statements)
+  - Check 4 — the Supervisor Assessment Section portion (missing factors, missing Categorical Score / Numeric Score / PAQL, missing narrative)
+  - Check 5 (the four required supervisor elements, CRI vs. CA differentiation)
+  - Check 6 (scoring validation, out-of-range scores, Very High eligibility)
+  - Check 7 — the supervisor assessment character limit
+  - Check 8 — writing quality issues in the supervisor's narratives
+
+**Formatting the Notes and Supr Inputs cells:**
+
+- Write each finding as `SEVERITY: short description`, using `CRITICAL`, `WARNING`, or `INFO`.
+- Include the location so the finding is actionable on its own (e.g., `CRITICAL: Communication and/or Teamwork has only 2 of 3 required W-R-I statements`).
+- Join multiple findings with a semicolon and a space: `; `.
+- If a column has no findings for that employee, write exactly: `No findings.`
+- Keep each finding to one sentence. The narrative report above holds the full detail and the exact fix wording; this cell is a summary line for the panel roster.
+
+**CSV correctness rules — follow these exactly or the file will not open correctly in Excel:**
+
+- Enclose EVERY field in double quotes, including empty ones and the header row. Employee names contain commas and findings quote the approved lead-in statements, so unquoted fields will break the column alignment.
+- Escape a double quote inside a field by doubling it. A finding quoting a lead-in becomes: `"CRITICAL: Lead-in reads ""I concur with the employee's self-assessment"" - must read ""Meeting expected contributions"""`
+- NEVER put a literal line break inside a field. Every row is exactly one line. Use `; ` to separate findings, never a newline.
+- Do not wrap or hard-break long lines. A row may be very long; that is correct.
+- Do not put blank lines between rows.
+- Do not add a leading or trailing space after a comma separator.
+- Emit the header row exactly once, as the first line.
+- Use plain ASCII inside the CSV only. Excel on Windows frequently mangles non-ASCII characters when opening a .csv file. Write a hyphen (-) instead of an em dash or en dash, straight quotes (") instead of curly quotes, and "..." instead of an ellipsis character. This applies ONLY to the CSV block; the narrative report above it has no such restriction.
+- If a field the report should contain is missing or unreadable (for example, no `Supervisor Level 1` in the header block), leave that cell empty AND record it as a finding in the appropriate column.
+
+**Example of correctly formatted output (illustrative only — three employees showing a clean record, an employee-side-only record, and a supervisor-side-only record):**
+
+```csv
+"Employee Name","Symbol","Series","Supervisor 1","Sub-Panel","Sub-Panel Manager","UCI","Notes","Supr Inputs"
+"Snuffy, Joe M","","1170","SMITH, JOE D","","","","No findings.","No findings."
+"Charlie, Robert T","","1170","SMITH, JOE D","","","","CRITICAL: Communication and/or Teamwork has only 2 of the 3 required W-R-I statements; CRITICAL: Job Achievement statement 2 is missing the (I) Impact element","No findings."
+"Hotel, Karen J","","1170","REYES, DANIEL A","","","","No findings.","CRITICAL: Job Achievement lead-in reads ""Met expectations"" - must read one of the four approved lead-in statements; CRITICAL: Communication and/or Teamwork narrative has no lead-in statement at all"
+```
+
+Note how the two columns work independently: Charlie's defects are entirely in the employee self-assessment, so Supr Inputs reads `No findings.`; Hotel's defects are entirely in the supervisor narratives, so Notes reads `No findings.`. An employee with a clean record reads `No findings.` in both.
+
+After the CSV code block, add this one-line instruction for the user:
+
+"To use this: copy the text above, paste it into a plain text editor, save the file with a .csv extension, then open it in Excel."
 
 ---
 

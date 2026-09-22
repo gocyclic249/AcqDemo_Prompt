@@ -346,6 +346,31 @@ You get a findings report for each person in the file, containing:
 
 The report deliberately contains no tables, so you can save it as a .docx without the formatting breaking.
 
+### Step 5: Save the spreadsheet summary
+
+After the written findings for everyone in the file, you get one last block of text — a summary with one line per person, ready for Excel. It looks like this, with everything separated by commas:
+
+```
+"Employee Name","Symbol","Series","Supervisor 1","Sub-Panel","Sub-Panel Manager","UCI","Notes","Supr Inputs"
+"Snuffy, Joe M","","1170","SMITH, JOE D","","","","No findings.","No findings."
+```
+
+To turn it into a spreadsheet:
+
+1. Copy the whole block of text, including the first line with the column names.
+2. Open Notepad (or any plain text editor) and paste it in.
+3. Save the file with a name ending in **.csv** — for example, `panel_review.csv`. In Notepad's Save dialog, set "Save as type" to **All Files** first, or it will add `.txt` to the end.
+4. Double-click the saved file. It opens in Excel with each piece of information in its own column.
+
+Two of the columns hold the review results, split so each person knows what is theirs to fix:
+
+- **Notes** — problems in the part the *employee* wrote (their W-R-I statements, the header block, the contribution plan)
+- **Supr Inputs** — problems in the part the *supervisor* wrote (the opening statements, the narratives, the scores)
+
+If a person has nothing wrong on one side, that column simply reads "No findings."
+
+**Four columns come back empty on purpose: Symbol, Sub-Panel, Sub-Panel Manager, and UCI.** That information is not printed anywhere in an appraisal report, so the assistant has no way to know it and is specifically told not to guess. Fill those four columns in yourself once the file is open in Excel.
+
 ### What It Checks
 
 1. **Supervisor opening statements** (CRITICAL) — each factor must open with one of the four exact approved statements
@@ -363,6 +388,7 @@ The report deliberately contains no tables, so you can save it as a .docx withou
 - **Know whether it is midterm or annual.** The W-R-I minimums differ.
 - **Fix the CRITICAL findings first.** Those block pay raise and award eligibility.
 - **Use the exact opening statement.** When one is flagged, the four approved statements are listed in the finding.
+- **Check the spreadsheet against your roster.** The assistant fills in only what the report actually prints — name, series, and the first supervisor. Symbol, Sub-Panel, Sub-Panel Manager, and UCI are left blank for you.
 - **Do not include classified information.**
 
 ---
