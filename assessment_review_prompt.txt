@@ -72,13 +72,37 @@ Employee self-assessment statements MUST be in What-Result-Impact (W-R-I) format
 - **I (Impact):** The broader effect on the organization's mission, goals, or strategic objectives.
 
 Requirements:
-- Each W-R-I statement must have all three elements clearly present (labeled or clearly distinguishable).
+- Each W-R-I statement must have all three elements clearly present and labeled.
 - **Midterm assessment:** Minimum 1 W-R-I statement per factor.
 - **Annual assessment:** Minimum 3 W-R-I statements per factor, or 2 per factor for a first-year organization in the current cycle only.
 - The three factors are: (1) Job Achievement and/or Innovation, (2) Communication and/or Teamwork, (3) Mission Support.
-- W-R-I statements must NOT be repeated or duplicated across factors.
 - Impact must answer the "So What?" question — it must tie the contribution to the organization's mission and priorities.
 - Be specific: statements should include dollar figures, program names, time saved, percentages, number of personnel affected, and other quantifiable details where applicable.
+
+**Required element markers (SME directive):**
+
+Each element must be labeled with exactly these three markers, and no others:
+
+- `(W):`
+- `(R):`
+- `(I):`
+
+Flag as CRITICAL any other marker style, including descriptive variants such as `(W) What I did:`, `(R) Result:`, `(I) Impact:`, or `What:` / `Result:` / `Impact:` without the parenthesized letter. Report each non-compliant statement. The fix is to replace the marker with the bare `(W):`, `(R):`, or `(I):` form, leaving the narrative text unchanged.
+
+**No title or heading lines (SME directive):**
+
+W-R-I statements must not carry a title, heading, or caption line above them — for example a line beginning `Accomplishment:`. Flag every such line as CRITICAL. The fix is to delete the title line; if it carries information worth keeping, fold it into the `(W):` text.
+
+**Duplication (business rules 7.5.1.2):**
+
+Within this file, flag as CRITICAL:
+- The same W-R-I statement appearing under more than one factor (cross-factor duplication).
+- The same W-R-I statement appearing twice under the SAME factor (within-factor duplication).
+- A W-R-I statement whose `(W):` text reproduces a Contribution Plan objective verbatim or near-verbatim. The plan states what the employee was expected to do; the `(W):` must state what they actually did.
+
+Treat near-identical statements — differing only in dates, counts, or figures — as duplication, and say which fields differ.
+
+**Year-over-year duplication is OUT OF SCOPE for this prompt.** You are reviewing a single appraisal year. Do not ask for a prior-year file, do not speculate about whether a statement was reused from a previous cycle, and do not flag it. A separate tool handles two-year comparison.
 
 Flag as CRITICAL:
 - Missing W-R-I format entirely
@@ -86,21 +110,28 @@ Flag as CRITICAL:
 - Missing any of the three W-R-I elements in a statement
 
 Flag as WARNING:
-- W-R-I elements present but not clearly labeled or separated
 - Impact statements that are vague or do not clearly tie to mission
 
 ---
 
 **CHECK 3: Mandatory Supervisory Objective (supervisors only)**
-Priority: CRITICAL (if employee is a supervisor)
+Priority: CRITICAL (if employee has a mandatory Supervisory Objective)
 
-If the employee holds a supervisory position:
-- The FIRST W-R-I statement under **Job Achievement and/or Innovation** must address the mandatory supervisory objective.
-- This statement must include the number of military personnel supervised, civilians supervised, and contractors managed.
-  Example: "I supervise 0 military, 11 Civilians, and manage 2 contractors."
-- This mandatory objective does NOT count toward the 3 required W-R-I statements per factor (so a supervisor needs the mandatory objective PLUS 3 additional W-R-I statements under Job Achievement). The 2-per-factor figure applies only to first-year organizations for the current cycle.
+Applies to employees whose contribution plan contains a mandatory Supervisory Objective. It does NOT apply to supervisors coded as "4" (business rules 7.5.2).
 
-If it is unclear whether the employee is a supervisor, flag as INFO and recommend verifying.
+The objective must be addressed under **Job Achievement and/or Innovation**, and it must meet ALL FOUR of the following (business rules 7.5.2 and 7.5.2.1):
+
+1. **Written in PARAGRAPH form — NOT in W-R-I format.** This is the requirement most often gotten wrong in both directions. The supervisory objective is a narrative paragraph. If it carries `(W):` / `(R):` / `(I):` markers, or is otherwise structured as a W-R-I statement, flag it as CRITICAL: it must be rewritten as a paragraph.
+2. **Placed BEFORE any W-R-I statements** in the Job Achievement factor. If it appears after one or more W-R-I statements, flag as CRITICAL.
+3. **States the personnel counts** — the number of military members and civilian employees supervised, plus the number of contractors managed.
+   Example from the business rules: "I supervise 0 military, 10 civilians, and manage 6 contractors."
+4. **Addresses how the employee met the supervisory objective**, in that same paragraph.
+
+The supervisory objective does NOT count toward the 3 required W-R-I statements for Job Achievement. A supervisor therefore needs the supervisory objective paragraph PLUS 3 W-R-I statements under Job Achievement. The 2-per-factor figure applies only to first-year organizations for the current cycle.
+
+**Do not flag a correctly formatted supervisory objective.** A paragraph that states the counts, addresses the objective, and sits above the W-R-I statements is compliant — reporting it as a missing or malformed W-R-I statement is a false positive.
+
+If the contribution plan contains no Supervisory Objective and it is unclear whether the employee is a supervisor, flag as INFO and recommend verifying. Do not assume an employee is a supervisor from job title alone.
 
 ---
 
