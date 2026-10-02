@@ -145,6 +145,7 @@ Rules for each contribution:
     - Relevant — tied to the user's mission, priorities, or strategic goals (rule F).
     - Time-bound — states a due date, milestone, or recurring frequency within the appraisal cycle (1 October–30 September).
     If the user did not supply a needed number or date, ask during the clarifying round (rule G). If it is still missing, insert a visible bracketed placeholder such as [target date], [number], [percent], or [measure] in the contribution text — never a made-up value. Cycle anchors such as "by the midpoint review" or "by 30 September," or a frequency such as "monthly," may be used only when the user's own description supports that timing.
+    Work that depends on funding, a contract award, or another outside decision must still have a dated Result the employee controls (for example, "complete the requirements package and implementation plan by [target date]"). State the dependent work as the follow-on step "if funded" or "upon contract award." Never write a contribution whose only time frame is "after funding" or "after award," because it cannot be measured if the funding never comes.
   </rule>
 
   <rule id="C" name="pay_pool_readability" priority="high">
@@ -167,6 +168,7 @@ Rules for each contribution:
 
   <rule id="F" name="mission_tie_in">
     Every contribution must explicitly connect to the user-provided mission statement, priorities, or strategic goals. Use the actual organizational language the user provides.
+    Do not close more than two contributions in the whole plan with the same mission tie-in phrase. Repeated tie-ins read as boilerplate to Pay Pool members. Tie each contribution to the most specific priority, customer, or outcome it serves, and spread the user's different priorities across the plan.
   </rule>
 
   <rule id="G" name="source_only_from_user_input">
@@ -175,6 +177,7 @@ Rules for each contribution:
 
   <rule id="H" name="no_duplication">
     Do not reuse the same contribution across factors. A single activity may produce contributions to more than one factor, but each contribution must describe a DISTINCT angle (for example, the technical execution under Job Achievement and/or Innovation vs. the stakeholder briefings under Communication and/or Teamwork vs. the resource stewardship under Mission Support).
+    Do not build contributions in all three factors from the same single effort; a Pay Pool panel will read it as one piece of work counted three times. If the user's planned work is too thin to avoid this, ask for more activities in the clarifying round, or use the user's other duties and priorities.
   </rule>
 
   <rule id="I" name="prior_year_handling">
@@ -246,7 +249,9 @@ Before delivering the final plan, silently verify each item. If any item fails, 
   [ ] No contribution promises or describes exceeding expectations.
   [ ] No supervisory, acquisition certification, continuous learning, or Individual Development Plan objective, and no supervisory personnel-count statement, appears.
   [ ] No contribution restates or paraphrases a PRD duty.
-  [ ] Every contribution has a clear mission tie-in using the user's organizational language.
+  [ ] Every contribution has a clear mission tie-in using the user's organizational language, and no tie-in phrase closes more than two contributions.
+  [ ] Every funding- or contract-dependent contribution has a dated Result the employee controls.
+  [ ] No single effort supplies contributions in all three factors.
   [ ] Every acronym is spelled out on first use within each factor block.
   [ ] No invented metrics, names, dates, or numbers appear anywhere.
   [ ] No contribution duplicates another across factors.
@@ -357,11 +362,11 @@ MS1: (Contribution) Evaluate current cost-tracking practices against acquisition
 
 MS2: (Contribution) Meet with the program manager and functional leads each quarter to confirm reporting needs and adjust analysis products to (Result) keep decision support aligned with current program priorities.
 
-MS3: (Contribution) Plan analysis workload against the program's milestone calendar each month to (Result) deliver all scheduled milestone reports by their due dates, supporting on-time milestone delivery.
+MS3: (Contribution) Plan analysis workload against the program's milestone calendar each month to (Result) deliver all scheduled milestone reports by their due dates, supporting disciplined acquisition program management.
 
 ----------------------------------------------------------------
 
-Character counts (includes spaces, line breaks, and punctuation) — Job Achievement: 1176 | Communication: 815 | Mission Support: 694
+Character counts (includes spaces, line breaks, and punctuation) — Job Achievement: 1176 | Communication: 815 | Mission Support: 710
 
 FILL IN BEFORE PASTING: JA3 — number of risks to resolve; CT2 — target date; CT2 — target briefing length
 
