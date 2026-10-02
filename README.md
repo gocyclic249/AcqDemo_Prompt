@@ -207,24 +207,34 @@ The assistant greets you and asks for the items below. You can type them or uplo
 
 1. Your **Position Requirements Document (PRD)**.
 2. Your **Contribution Plan from last cycle**, if you are in the same job. If you changed jobs, just say "new job."
-3. Your **career path and level** (for example NH-II, NJ-III, NK-IV). If you do not know it, give your pay grade or job series and the assistant will help you work it out.
-4. Your **job title, organization, and duty location**.
-5. Your **organization's mission statement** and its current priorities or goals.
-6. A **short list of what you expect to work on** this cycle. Plain bullets are fine.
-7. **Whether you are a supervisor.** If you are, give the exact number of military supervised, civilians supervised, and contractors managed. If not, say "non-supervisor."
-8. **Optional:** any objectives your supervisor has already assigned you, such as an audit response or a training program.
+3. Your **career path and level** (for example NH-II, NJ-III, NK-II). If you do not know it, give your pay grade or job series and the assistant will help you work it out.
+4. Your **Value of Position** — a number such as 66, 75, 83, or 93. Ask your supervisor for it. If you do not have it yet, say "unknown" and the assistant will leave a blank for you to fill in. It will never guess this number.
+5. Your **job title, organization, and duty location**.
+6. Your **organization's mission statement** and its current priorities or goals.
+7. A **short list of what you expect to work on** this cycle. Plain bullets are fine. Include any target numbers or due dates you already know — they make the plan stronger.
+8. **Whether you are a supervisor** — just yes or no.
+9. **Optional:** any other work your supervisor has already assigned you, such as an audit response or a special project.
+
+You do **not** need to give the supervisory, acquisition certification, continuous learning, or Individual Development Plan (IDP) objectives. CAS2Net adds those to your plan automatically.
 
 ### Step 3: Answer the clarifying questions
 
-You will get a short, focused round of questions where an objective is missing something important — for example, "Will you lead this or support it?" or "What is the timeline?" Answer what you can, or type: **skip questions and just write it.**
+You will get a short, focused round of questions where a contribution is missing something important — usually a number, a due date, or your role. For example: "What number will show this is done well?", "When is this due?", or "Will you lead this or support it?" Answer what you can, or type: **skip questions and just write it.**
 
 ### Step 4: Read the output and clean it up
 
-You get a plain-text Contribution Plan organized by the three factors, with two objectives per factor, formatted so you can copy each factor block straight into the matching CAS2Net field. The last lines show the approximate character count for each block — CAS2Net allows about 4,000 characters per field, and about 2,000 is a good target.
+You get a plain-text Contribution Plan that follows the 2026 Contribution Plan Template, organized by the three factors and formatted so you can copy each factor block straight into the matching CAS2Net field:
 
-If you are a supervisor, the required supervisory opening statement appears at the top of the Job Achievement and/or Innovation block, with your personnel numbers, ahead of Objective 1.
+- The **Job Achievement and/or Innovation** block starts with your **Brief Summary of Position**, which opens with "Current Value of Position is:" and your number.
+- Each factor has **at least three labeled contributions** — JA1, JA2, JA3 for Job Achievement and/or Innovation; CT1, CT2, CT3 for Communication and/or Teamwork; MS1, MS2, MS3 for Mission Support.
+- Each contribution is written as "(Contribution) what you will do … to (Result) what will be delivered or measured," with a due date or frequency and a link to your organization's mission.
+- Each one describes the level of work **expected** for your Value of Position and broadband level. That is on purpose: doing more than expected is something you show later, in your midpoint and annual assessments, not something you promise in the plan.
 
-Check every objective against the work you actually plan to do, and talk it over with your supervisor before entering it in CAS2Net. Plans can be adjusted during the cycle as new expectations come up.
+The last lines show the approximate character count for each block — CAS2Net allows about 4,000 characters per field, and about 2,000 is a good target.
+
+**Fill in the blanks.** If the assistant did not have a number or date it needed, it leaves a blank in square brackets, such as [target date] or [percent], and lists every blank on a "FILL IN BEFORE PASTING" line. Replace each one with your real figure before you paste. The assistant never makes these numbers up.
+
+Check every contribution against the work you actually plan to do, and talk it over with your supervisor before entering it in CAS2Net. Write it so that someone outside your office, such as a Pay Pool member, would understand it. Plans can be adjusted during the cycle as new expectations come up, but not during the last 90 days of the cycle.
 
 ---
 
