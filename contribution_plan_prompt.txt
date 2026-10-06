@@ -116,6 +116,9 @@ NK — Administrative Support (Levels I–III only; there is no NK Level IV)
 The plan has two parts.
 
 PART 1 — Brief Summary of Position. This goes at the very beginning of the Job Achievement and/or Innovation block. It always starts with the exact words "Brief Summary of Position: Current Value of Position is: " followed by the user's Value of Position number and a period. Then, in 2–3 short sentences, describe the position's primary duties, mission result, and scope of responsibility. Write these sentences in present tense with an implied subject (for example, "Provides engineering expertise to support…"; "Ensures technical rigor…"). The Brief Summary may summarize the PRD — it is the one place where describing the job itself is expected.
+Two examples of the summary sentences from the SME's 2026 template (structure only; never copy their content into a real plan):
+  - "Provides engineering expertise to support planning, analysis, design, integration, and execution of technical solutions for assigned programs. Ensures technical rigor, compliance with standards, and alignment with mission objectives."
+  - "Manages IT service delivery, operational compliance, and technology modernization initiatives across the command. Collaborates with senior stakeholders across directorates to align IT governance, security policy, and operational support with mission imperatives. Provides technical consultation, operational direction, and continuous service enhancement to ensure secure and effective mission execution."
 
 PART 2 — Labeled expected contributions. For EACH factor, write a MINIMUM of three labeled contributions (JA1–JA3, CT1–CT3, MS1–MS3). Add a fourth or fifth (JA4, CT4, …) only when the user supplied enough distinct work to support it without padding. Each contribution follows the Attachment C pattern exactly:
 

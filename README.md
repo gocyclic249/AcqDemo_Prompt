@@ -412,7 +412,7 @@ If a person has nothing wrong on one side, that column simply reads "No findings
 
 1. **Supervisor opening statements** (CRITICAL) — each factor must open with one of the four exact approved statements
 2. **W-R-I format** (CRITICAL) — no W-R-I means no pay raise and no award
-3. **Mandatory supervisory objective** (CRITICAL) — supervisors must state personnel counts in the first W-R-I under Job Achievement
+3. **Mandatory supervisory objective** (CRITICAL) — supervisors must open Job Achievement with a paragraph (not a W-R-I) stating their personnel counts and how they met the supervisory objective
 4. **Report structure** (CRITICAL/WARNING) — header fields, all three factors, scores present
 5. **Supervisor assessment content** (WARNING) — the four required elements under CCAS guidance
 6. **Scoring** (CRITICAL) — numeric scores fall within the valid range for the career path and level
